@@ -1,3 +1,3 @@
 - 👋 Hi, I’m @huelsbusch
-- 👀 I’m interested in IT security, cloud architecture, software development
+- 👀 I’m interested in IT security, cloud architecture & software development
 - 📫 How to reach me huelsbusch@nuu.one
