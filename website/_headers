@@ -1,6 +1,6 @@
 https://colinhuelsbusch.de/*
   Cache-Control: public, max-age=604800
-  Content-Security-Policy: default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self'; font-src 'self'; prefetch-src 'self'; worker-src 'self'; block-all-mixed-content; disown-opener; sandbox allow-same-origin allow-scripts; base-uri 'self'; manifest-src 'self'
+  Content-Security-Policy: default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self'; font-src 'self'; worker-src 'self'; block-all-mixed-content; sandbox allow-same-origin allow-scripts; base-uri 'self'; manifest-src 'self'
   Cross-Origin-Embedder-Policy: require-corp
   Cross-Origin-Opener-Policy: same-origin
   Cross-Origin-Resource-Policy: same-origin 
