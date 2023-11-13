@@ -1,2 +1,15 @@
 https://colinhuelsbusch.de/*
+  Cache-Control: public, max-age=604800
+  Content-Security-Policy: default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self'; font-src 'self'; prefetch-src 'self'; worker-src 'self'; block-all-mixed-content; disown-opener; sandbox allow-same-origin allow-scripts; base-uri 'self'; manifest-src 'self'
+  Cross-Origin-Embedder-Policy: require-corp
+  Cross-Origin-Opener-Policy: same-origin
+  Cross-Origin-Resource-Policy: same-origin 
   Onion-Location: http://huelsbuskfpgdyluq5kcunmiyknhbs32mhxu5tenztsfxuetj44umgqd.onion
+  Permissions-Policy: accelerometer=(),ambient-light-sensor=(),autoplay=(),battery=(),camera=(),display-capture=(),document-domain=(),encrypted-media=(),fullscreen=(),gamepad=(),geolocation=(),gyroscope=(),layout-animations=(self),legacy-image-formats=(self),magnetometer=(),microphone=(),midi=(),oversized-images=(self),payment=(),picture-in-picture=(),publickey-credentials-get=(),speaker-selection=(),sync-xhr=(self),unoptimized-images=(self),unsized-media=(self),usb=(),screen-wake-lock=(),web-share=(),xr-spatial-tracking=()
+  Referrer-Policy: no-referrer
+  Strict-Transport-Security: max-age=31536000 ; includeSubDomains ; preload
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: deny
+
+https://colinhuelsbusch.de/index.html
+  Content-Type: text/html; charset=utf-8
