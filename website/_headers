@@ -1,6 +1,6 @@
 https://colinhuelsbusch.de/*
   Cache-Control: public, max-age=604800
-  Content-Security-Policy: default-src 'none'; style-src 'sha256-GnuvaSO0Lq1bFSSZQYPtnjOgNsWjsMaBvtG//fRmDJ0='; img-src 'self'; font-src 'self'; worker-src 'self'; block-all-mixed-content; sandbox; base-uri 'self'; manifest-src 'self';
+  Content-Security-Policy: default-src 'none'; style-src 'sha256-GnuvaSO0Lq1bFSSZQYPtnjOgNsWjsMaBvtG//fRmDJ0='; img-src 'colinhuelsbusch.de'; font-src 'colinhuelsbusch.de'; worker-src 'colinhuelsbusch.de'; block-all-mixed-content; sandbox; base-uri 'self'; manifest-src 'self';
   Cross-Origin-Embedder-Policy: require-corp
   Cross-Origin-Opener-Policy: same-origin
   Cross-Origin-Resource-Policy: same-origin 
