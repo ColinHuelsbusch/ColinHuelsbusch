@@ -10,6 +10,3 @@ https://colinhuelsbusch.de/*
   Strict-Transport-Security: max-age=31536000 ; includeSubDomains ; preload
   X-Content-Type-Options: nosniff
   X-Frame-Options: deny
-
-https://colinhuelsbusch.de/index.html
-  Content-Type: text/html; charset=utf-8
