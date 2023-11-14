@@ -3,7 +3,7 @@
   "short_name": "Hülsbusch",
   "theme_color": "#403d44",
   "background_color": "#fff",
-  "display": "fullScreen",
+  "display": "fullscreen",
   "orientation": "portrait",
   "scope": "/",
   "start_url": "/",
@@ -47,6 +47,16 @@
     {
       "src": "apple-touch-icon-180x180.png",
       "sizes": "180x180",
+      "type": "image/png"
+    },
+    {
+      "src": "apple-touch-icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "apple-touch-icon-512x512.png",
+      "sizes": "512x512",
       "type": "image/png"
     }
   ]
