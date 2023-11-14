@@ -5,8 +5,7 @@
   "background_color": "#fff",
   "display": "fullscreen",
   "orientation": "portrait",
-  "scope": "/",
-  "start_url": "/",
+  "start_url": ".",
   "prefer_related_applications": false,
   "icons": [
     {
