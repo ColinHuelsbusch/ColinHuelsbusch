@@ -1,306 +1,321 @@
 <!doctype html>
 <html lang="de" dir="ltr">
-<head>
-	<meta charset="utf-8">
-	<title>Colin Hülsbusch</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-	<link rel="apple-touch-icon" href="apple-touch-icon.png">
-	<link rel="apple-touch-icon" sizes="57x57" href="apple-touch-icon-57x57.png">
-	<link rel="apple-touch-icon" sizes="72x72" href="apple-touch-icon-72x72.png">
-	<link rel="apple-touch-icon" sizes="76x76" href="apple-touch-icon-76x76.png">
-	<link rel="apple-touch-icon" sizes="114x114" href="apple-touch-icon-114x114.png">
-	<link rel="apple-touch-icon" sizes="120x120" href="apple-touch-icon-120x120.png">
-	<link rel="apple-touch-icon" sizes="144x144" href="apple-touch-icon-144x144.png">
-	<link rel="apple-touch-icon" sizes="152x152" href="apple-touch-icon-152x152.png">
-	<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon-180x180.png">
-	<meta name="description" content="Online-Visitenkarte von Colin Hülsbusch">
-	<style type="text/css">
-		@font-face {
-			font-display: swap;
-			font-family: 'Source Sans Pro';
-			font-style: normal;
-			font-weight: 200;
-			src: local(''),
-			url('source-sans-pro-v14-latin-200.woff2') format('woff2'),
-			url('source-sans-pro-v14-latin-200.woff') format('woff');
-		}
-		@font-face {
-			font-display: swap;
-			font-family: 'Source Sans Pro';
-			font-style: normal;
-			font-weight: 400;
-			src: local(''),
-			url('source-sans-pro-v14-latin-regular.woff2') format('woff2'),
-			url('source-sans-pro-v14-latin-regular.woff') format('woff');
-		}
-		@font-face {
-			font-display: swap;
-			font-family: 'Source Sans Pro';
-			font-style: normal;
-			font-weight: 700;
-			src: local(''),
-			url('source-sans-pro-v14-latin-700.woff2') format('woff2'),
-			url('source-sans-pro-v14-latin-700.woff') format('woff');
-		}
-		body {
-			margin: 0;
-			font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif;
-			font-weight: 400;
-			text-align: center;
-		}
-		a {
-			color: #111;
-			text-decoration: none;
-		}
-		.header {
-			height: 38.2vmin;
-			width: 100%;
-			background: #403d44;
-			float: left;
-		}
-		.header-content {
-			height: 38.2vmin;
-			width: 100%;
-			max-width: 100vmin;
-			margin: 0 auto;
-			text-align: left;
-		}
-		.content {
-			height: 61.8vmin;
-			width: 100%;
-			max-width: 100vmin;
-			margin: 0 auto;
-			text-align: left;
-		}
-		.picture {
-			float: left;
-			width: 30vmin;
-			height: 30vmin;
-			margin: 4.1vmin 4vmin;
-			margin-right: 8vmin;
-			background: #ccdee8 no-repeat center center;
-			background-image: url("picture.jpg");
-			background-image: image-set(
-				"picture.webp" type("image/webp"),
-				"picture.jpg" type("image/jpeg")
-			);
-			background-size: contain;
-			border-radius: 50%;
-		}
-		h1 {
-			color: #ccdee8;
-			margin: 0;
-			padding-top: 12vmin;
-			font-size: 6vmin;
-			font-weight: 200;
-			text-align: left;
-		}
-		h2 {
-			color: #ccdee8;
-			font-size: 2.8vmin;
-			font-weight: 400;
-			margin: 0;
-			left: 0.3vmin;
-			position: relative;
-		}
-		.link {
-			color: #ccdee8;
-			font-size: 1.4vmin;
-			font-weight: 700;
-			margin-top: 1vmin;
-			margin-right: 1.1vmin;
-			margin-left: 0.3vmin;
-			display: inline-block;
-			border: 1px solid #ccdee8;
-			padding: 10px 20px;
-			border-radius: 7px;
-		}
-		.badge {
-			width: 33.3%;
-			height: 15%;
-			margin-top: 7%;
-			float: left;
-			position: relative;
-			display: flex;
-			align-items: center;
-		}
-		.badge .img {
-			height: 7vmin;
-			width: 7vmin;
-			margin-left: 4vmin;
-			margin-right: 2vmin;
-			background-image: url("certification.png");
-			background-image: image-set(
-				"certification.webp" type("image/webp"),
-				"certification.png" type("image/png")
-			);
-			background-size: auto 100%;
-		}
-		.badge a {
-			height: 10vw;
-			display: flex;
-			align-items: center;
-			font-size: 1.7vmin;
-		}
-		.badge1 {
-			background-position:0 0;
-		}
-		.badge2 {
-			background-position:105vmin 0;
-		}
-		.badge3 {
-			background-position:98vmin 0;
-		}
-		.badge4 {
-			background-position:91vmin 0;
-		}
-		.badge5 {
-			background-position:84vmin 0;
-		}
-		.badge6 {
-			background-position:77vmin 0;
-		}
-		.badge7 {
-			background-position:70vmin 0;
-		}
-		.badge8 {
-			background-position:63vmin 0;
-		}
-		.badge9 {
-			background-position:56vmin 0;
-		}
-		.badge10 {
-			background-position:49vmin 0;
-		}
-		.badge11 {
-			background-position:42vmin 0;
-		}
-		.badge12 {
-			background-position:35vmin 0;
-		}
-		.badge13 {
-			background-position:28vmin 0;
-		}
-		.badge14 {
-			background-position:21vmin 0;
-		}
-		.badge15 {
-			background-position:14vmin 0;
-		}
-		.badge16 {
-			background-position:7vmin 0;
-		}
-	</style>
-</head>
-<body>
-	<div class="header">
-		<div class="header-content">
-			<div class="picture"></div>
-			<h1>Colin Hülsbusch</h1>
-			<h2>Top IT Führungskraft</h2>
-			<div>
-				<a class="link" href="visitenkarte.vcf">Visitenkarte herunterladen</a>
+	<head>
+		<meta charset="utf-8">
+		<title>Colin Hülsbusch</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+		<link rel="apple-touch-icon" href="apple-touch-icon.png">
+		<link rel="apple-touch-icon" sizes="57x57" href="apple-touch-icon-57x57.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="apple-touch-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="apple-touch-icon-76x76.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="apple-touch-icon-114x114.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="apple-touch-icon-120x120.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="apple-touch-icon-144x144.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="apple-touch-icon-152x152.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon-180x180.png">
+		<meta name="description" content="Online-Visitenkarte von Colin Hülsbusch">
+		<style type="text/css">
+			@font-face {
+				font-display: swap;
+				font-family: 'Source Sans Pro';
+				font-style: normal;
+				font-weight: 200;
+				src: local(''),
+				url('source-sans-pro-v14-latin-200.woff2') format('woff2'),
+				url('source-sans-pro-v14-latin-200.woff') format('woff');
+			}
+			@font-face {
+				font-display: swap;
+				font-family: 'Source Sans Pro';
+				font-style: normal;
+				font-weight: 400;
+				src: local(''),
+				url('source-sans-pro-v14-latin-regular.woff2') format('woff2'),
+				url('source-sans-pro-v14-latin-regular.woff') format('woff');
+			}
+			@font-face {
+				font-display: swap;
+				font-family: 'Source Sans Pro';
+				font-style: normal;
+				font-weight: 700;
+				src: local(''),
+				url('source-sans-pro-v14-latin-700.woff2') format('woff2'),
+				url('source-sans-pro-v14-latin-700.woff') format('woff');
+			}
+			body {
+				margin: 0;
+				font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif;
+				font-weight: 400;
+				text-align: center;
+			}
+			a {
+				color: #111;
+				text-decoration: none;
+			}
+			.header {
+				height: 38.2vmin;
+				width: 100%;
+				background: #403d44;
+				float: left;
+				overflow: hidden;
+			}
+			.header-content {
+				height: 38.2vmin;
+				width: 100%;
+				max-width: 100vmin;
+				margin: 0 auto;
+				text-align: left;
+			}
+			.content {
+				height: 61.8vmin;
+				width: 100%;
+				max-width: 100vmin;
+				margin: 0 auto;
+				text-align: left;
+			}
+			.picture {
+				float: left;
+				width: 30vmin;
+				height: 30vmin;
+				margin: 4.1vmin 4vmin;
+				margin-right: 8vmin;
+				background: #ccdee8 no-repeat center center;
+				background-image: url("picture.jpg");
+				background-image: image-set(
+					"picture.webp" type("image/webp"),
+					"picture.jpg" type("image/jpeg")
+				);
+				background-size: contain;
+				border-radius: 50%;
+			}
+			h1 {
+				color: #ccdee8;
+				margin: 0;
+				padding-top: 12vmin;
+				font-size: 6vmin;
+				font-weight: 200;
+				text-align: left;
+			}
+			h2 {
+				color: #ccdee8;
+				font-size: 4vmin;
+				font-weight: 400;
+				margin: 0;
+				left: 0.3vmin;
+				position: relative;
+			}
+			.link {
+				color: #ccdee8;
+				font-size: 3vmin;
+				font-weight: 700;
+				margin-top: 1vmin;
+				margin-right: 1.1vmin;
+				margin-left: 0.3vmin;
+				display: inline-block;
+				border: 1px solid #ccdee8;
+				padding: 1vmin 2vmin;
+				border-radius: 7px;
+			}
+			.badge {
+				width: 50%;
+				height: 15%;
+				margin-top: 7%;
+				float: left;
+				position: relative;
+				display: flex;
+				align-items: center;
+			}
+			.badge .img {
+				height: 7vmin;
+				width: 7vmin;
+				margin-left: 4vmin;
+				margin-right: 2vmin;
+				background-image: url("certification.png");
+				background-image: image-set(
+					"certification.webp" type("image/webp"),
+					"certification.png" type("image/png")
+				);
+				background-size: auto 100%;
+			}
+			.badge a {
+				height: 10vw;
+				display: flex;
+				align-items: center;
+				font-size: 3vmin;
+			}
+			@media screen and (min-width: 600px) {
+				h2 {
+					font-size: 3vmin;
+				}
+				.link {
+					font-size: 1.5vmin;
+				}
+				.badge {
+					width: 33.3%;
+				}
+				.badge a {
+					font-size: 1.7vmin;
+				}
+			}
+			.badge1 {
+				background-position:0 0;
+			}
+			.badge2 {
+				background-position:105vmin 0;
+			}
+			.badge3 {
+				background-position:98vmin 0;
+			}
+			.badge4 {
+				background-position:91vmin 0;
+			}
+			.badge5 {
+				background-position:84vmin 0;
+			}
+			.badge6 {
+				background-position:77vmin 0;
+			}
+			.badge7 {
+				background-position:70vmin 0;
+			}
+			.badge8 {
+				background-position:63vmin 0;
+			}
+			.badge9 {
+				background-position:56vmin 0;
+			}
+			.badge10 {
+				background-position:49vmin 0;
+			}
+			.badge11 {
+				background-position:42vmin 0;
+			}
+			.badge12 {
+				background-position:35vmin 0;
+			}
+			.badge13 {
+				background-position:28vmin 0;
+			}
+			.badge14 {
+				background-position:21vmin 0;
+			}
+			.badge15 {
+				background-position:14vmin 0;
+			}
+			.badge16 {
+				background-position:7vmin 0;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="header">
+			<div class="header-content">
+				<div class="picture"></div>
+				<h1>Colin Hülsbusch</h1>
+				<h2>Top IT Führungskraft</h2>
+				<div>
+					<a class="link" href="visitenkarte.vcf">Visitenkarte herunterladen</a>
+				</div>
 			</div>
 		</div>
-	</div>
-	<div class="content">
-		<div class="badge">
-			<a href="https://www.credly.com/badges/efc7f2f8-3b7e-4841-8d8d-2a2f961986fb">
-				<div class="img badge1"></div>
-				<span>Certified Information<br>Systems Security<br>Professional (CISSP)</span>
-			</a>
+		<div class="content">
+			<div class="badge">
+				<a href="https://www.credly.com/badges/efc7f2f8-3b7e-4841-8d8d-2a2f961986fb">
+					<div class="img badge1"></div>
+					<span>Certified Information<br>Systems Security<br>Professional (CISSP)</span>
+				</a>
+			</div>
+			<div class="badge">
+				<a href="https://www.credly.com/badges/41d5645b-8f84-46ee-bfa9-2f7312d35752">
+					<div class="img badge2"></div>
+					<span>AWS Certified<br>Solutions Architect<br>Professional</span>
+				</a>
+			</div>
+			<div class="badge">
+				<a href="https://www.credly.com/badges/c186c7d9-014c-4be5-8bfb-a8487e47226e">
+					<div class="img badge3"></div>
+					<span>AWS Certified<br>DevOps Engineer<br>Professional</span>
+				</a>
+			</div>
+			<div class="badge">
+				<a href="https://www.credly.com/badges/6b5682ff-bb20-40f4-8043-6b36b91066ab">
+					<div class="img badge4"></div>
+					<span>Professional<br>Scrum Master I<br>(PSM I)</span>
+				</a>
+			</div>
+			<div class="badge">
+				<a href="#">
+					<div class="img badge5"></div>
+					<span>SAP Certified<br>Development Associate<br>SAP BTP Extensions</span>
+				</a>
+			</div>
+			<div class="badge">
+				<a href="#">
+					<div class="img badge6"></div>
+					<span>SAP Certified<br>Development Associate<br>SAP Integration Suite</span>
+				</a>
+			</div>
+			<div class="badge">
+				<a href="https://www.credly.com/badges/7b9c915a-fa35-4d71-9cf8-77eb36616295">
+					<div class="img badge7"></div>
+					<span>Microsoft 365 Certified<br>Teams Administrator<br>Associate</span>
+				</a>
+			</div>
+			<div class="badge">
+				<a href="https://www.credly.com/badges/b162030c-d804-4d22-af10-009b6d90f949">
+					<div class="img badge8"></div>
+					<span>Microsoft Certified<br>Security, Compliance, and<br>Identity Fundamentals</span>
+				</a>
+			</div>
+			<div class="badge">
+				<a href="https://www.credly.com/badges/9309ce46-63d2-4f9f-ae61-affa7ac52cd4">
+					<div class="img badge9"></div>
+					<span>Microsoft Certified<br>Azure<br>Fundamentals</span>
+				</a>
+			</div>
+			<div class="badge">
+				<a href="https://www.credly.com/badges/f6b9defb-5e31-440a-bec4-c11f165f44b3">
+					<div class="img badge10"></div>
+					<span>Microsoft Certified<br>Azure AI<br>Fundamentals</span>
+				</a>
+			</div>
+			<div class="badge">
+				<a href="https://www.credly.com/badges/42bcf3fe-3cce-4148-8637-09aa67bfee7e">
+					<div class="img badge11"></div>
+					<span>Microsoft Certified<br>Azure Data<br>Fundamentals</span>
+				</a>
+			</div>
+			<div class="badge">
+				<a href="https://www.credly.com/badges/5378dc33-e0a0-4a79-a3cc-d108d875166e">
+					<div class="img badge12"></div>
+					<span>Microsoft Certified<br>Power Platform<br>Fundamentals</span>
+				</a>
+			</div>
+			<div class="badge">
+				<a href="https://www.credly.com/badges/5cdc419f-47ab-46f4-bc76-d8b12d5274bb">
+					<div class="img badge13"></div>
+					<span>Microsoft Certified<br>Dynamics 365<br>Fundamentals (CRM)</span>
+				</a>
+			</div>
+			<div class="badge">
+				<a href="https://www.credly.com/badges/9f8bbcb9-6aef-47be-ae09-c084ad77ef90">
+					<div class="img badge14"></div>
+					<span>Microsoft Certified<br>Dynamics 365<br>Fundamentals (ERP)</span>
+				</a>
+			</div>
+			<div class="badge">
+				<a href="https://www.credly.com/badges/a2086fe6-a17a-4737-8bec-8c2f1329b6fa">
+					<div class="img badge15"></div>
+					<span>AWS Certified<br>Solutions Architect<br>Associate</span>
+				</a>
+			</div>
+			<div class="badge">
+				<a href="https://www.credly.com/badges/dd9e7e74-2f90-4798-bf55-156102ac1a8c">
+					<div class="img badge16"></div>
+					<span>AWS Certified<br>SysOps Administrator<br>Associate</span>
+				</a>
+			</div>
 		</div>
-		<div class="badge">
-			<a href="https://www.credly.com/badges/41d5645b-8f84-46ee-bfa9-2f7312d35752">
-				<div class="img badge2"></div>
-				<span>AWS Certified<br>Solutions Architect<br>Professional</span>
-			</a>
-		</div>
-		<div class="badge">
-			<a href="https://www.credly.com/badges/c186c7d9-014c-4be5-8bfb-a8487e47226e">
-				<div class="img badge3"></div>
-				<span>AWS Certified<br>DevOps Engineer<br>Professional</span>
-			</a>
-		</div>
-		<div class="badge">
-			<a href="https://www.credly.com/badges/6b5682ff-bb20-40f4-8043-6b36b91066ab">
-				<div class="img badge4"></div>
-				<span>Professional<br>Scrum Master I<br>(PSM I)</span>
-			</a>
-		</div>
-		<div class="badge">
-			<a href="#">
-				<div class="img badge5"></div>
-				<span>SAP Certified<br>Development Associate<br>SAP BTP Extensions</span>
-			</a>
-		</div>
-		<div class="badge">
-			<a href="#">
-				<div class="img badge6"></div>
-				<span>SAP Certified<br>Development Associate<br>SAP Integration Suite</span>
-			</a>
-		</div>
-		<div class="badge">
-			<a href="https://www.credly.com/badges/7b9c915a-fa35-4d71-9cf8-77eb36616295">
-				<div class="img badge7"></div>
-				<span>Microsoft 365 Certified<br>Teams Administrator<br>Associate</span>
-			</a>
-		</div>
-		<div class="badge">
-			<a href="https://www.credly.com/badges/b162030c-d804-4d22-af10-009b6d90f949">
-				<div class="img badge8"></div>
-				<span>Microsoft Certified<br>Security, Compliance, and<br>Identity Fundamentals</span>
-			</a>
-		</div>
-		<div class="badge">
-			<a href="https://www.credly.com/badges/9309ce46-63d2-4f9f-ae61-affa7ac52cd4">
-				<div class="img badge9"></div>
-				<span>Microsoft Certified<br>Azure<br>Fundamentals</span>
-			</a>
-		</div>
-		<div class="badge">
-			<a href="https://www.credly.com/badges/f6b9defb-5e31-440a-bec4-c11f165f44b3">
-				<div class="img badge10"></div>
-				<span>Microsoft Certified<br>Azure AI<br>Fundamentals</span>
-			</a>
-		</div>
-		<div class="badge">
-			<a href="https://www.credly.com/badges/42bcf3fe-3cce-4148-8637-09aa67bfee7e">
-				<div class="img badge11"></div>
-				<span>Microsoft Certified<br>Azure Data<br>Fundamentals</span>
-			</a>
-		</div>
-		<div class="badge">
-			<a href="https://www.credly.com/badges/5378dc33-e0a0-4a79-a3cc-d108d875166e">
-				<div class="img badge12"></div>
-				<span>Microsoft Certified<br>Power Platform<br>Fundamentals</span>
-			</a>
-		</div>
-		<div class="badge">
-			<a href="https://www.credly.com/badges/5cdc419f-47ab-46f4-bc76-d8b12d5274bb">
-				<div class="img badge13"></div>
-				<span>Microsoft Certified<br>Dynamics 365<br>Fundamentals (CRM)</span>
-			</a>
-		</div>
-		<div class="badge">
-			<a href="https://www.credly.com/badges/9f8bbcb9-6aef-47be-ae09-c084ad77ef90">
-				<div class="img badge14"></div>
-				<span>Microsoft Certified<br>Dynamics 365<br>Fundamentals (ERP)</span>
-			</a>
-		</div>
-		<div class="badge">
-			<a href="https://www.credly.com/badges/a2086fe6-a17a-4737-8bec-8c2f1329b6fa">
-				<div class="img badge15"></div>
-				<span>AWS Certified<br>Solutions Architect<br>Associate</span>
-			</a>
-		</div>
-		<div class="badge">
-			<a href="https://www.credly.com/badges/dd9e7e74-2f90-4798-bf55-156102ac1a8c">
-				<div class="img badge16"></div>
-				<span>AWS Certified<br>SysOps Administrator<br>Associate</span>
-			</a>
-		</div>
-	</div>
-</body>
+	</body>
 </html>
