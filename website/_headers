@@ -1,6 +1,3 @@
-https://colinhuelsbusch.de/*
-  Cache-Control: max-age=31536000, immutable
-
 https://colinhuelsbusch.de/
   Cache-Control: no-cache
   Content-Security-Policy: default-src 'none'; style-src 'sha256-RSFu6ue+P1HWtKlgNcjwty5B474tz77aqR13wdxqJiI='; script-src 'unsafe-inline' 'sha256-rKzpl3NoAXRCUkgBQUZj8VtrKf2ABgCTDKEpkfJIFhs='; img-src https://colinhuelsbusch.de/; font-src https://colinhuelsbusch.de/; worker-src https://colinhuelsbusch.de/; block-all-mixed-content; base-uri 'self'; manifest-src 'self';
@@ -32,4 +29,12 @@ https://colinhuelsbusch.de/*.jpg
 
 https://colinhuelsbusch.de/*.webp
   Content-Type: image/webp
+  Cache-Control: max-age=31536000, immutable
+
+https://colinhuelsbusch.de/*.woff
+  Content-Type: font/woff
+  Cache-Control: max-age=31536000, immutable
+
+https://colinhuelsbusch.de/*.woff2
+  Content-Type: font/woff2
   Cache-Control: max-age=31536000, immutable
