@@ -320,9 +320,9 @@
 			</div>
 		</div>
 		<script>
-			self.addEventListener('fetch', function() {
-				return;
-			});
+			if ('serviceWorker' in navigator) {
+				navigator.serviceWorker.register('/sw.js');
+			}
 		</script>
 	</body>
 </html>
