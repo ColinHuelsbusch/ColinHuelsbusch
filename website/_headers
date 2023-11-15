@@ -3,7 +3,7 @@ https://colinhuelsbusch.de/*
 
 https://colinhuelsbusch.de/
   Cache-Control: max-age=31536000, immutable
-  Content-Security-Policy: default-src 'none'; style-src 'sha256-qzYA7zE1+mBlENgmyki8o62IknBPIaILD4WghZfl/Wc='; script-src 'sha256-rKzpl3NoAXRCUkgBQUZj8VtrKf2ABgCTDKEpkfJIFhs='; img-src https://colinhuelsbusch.de/; font-src https://colinhuelsbusch.de/; worker-src https://colinhuelsbusch.de/; block-all-mixed-content; sandbox allow-scripts allow-downloads; base-uri 'self'; manifest-src 'self';
+  Content-Security-Policy: default-src 'none'; style-src 'sha256-qzYA7zE1+mBlENgmyki8o62IknBPIaILD4WghZfl/Wc='; script-src 'sha256-rKzpl3NoAXRCUkgBQUZj8VtrKf2ABgCTDKEpkfJIFhs='; img-src https://colinhuelsbusch.de/; font-src https://colinhuelsbusch.de/; worker-src https://colinhuelsbusch.de/; block-all-mixed-content; sandbox allow-scripts allow-downloads allow-same-origin; base-uri 'self'; manifest-src 'self';
   Onion-Location: http://huelsbuskfpgdyluq5kcunmiyknhbs32mhxu5tenztsfxuetj44umgqd.onion
   Permissions-Policy: accelerometer=(),autoplay=(),camera=(),display-capture=(),encrypted-media=(),fullscreen=(),gamepad=(),geolocation=(),gyroscope=(),magnetometer=(),microphone=(),midi=(),payment=(),picture-in-picture=(),publickey-credentials-get=(),sync-xhr=(self),usb=(),screen-wake-lock=(),web-share=(),xr-spatial-tracking=()
   Referrer-Policy: no-referrer
