@@ -1,0 +1,3 @@
+Contact: mailto:mail@colinhuelsbusch.de
+Expires: 2056-09-30T22:00:00.000Z
+Preferred-Languages: en, de
