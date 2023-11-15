@@ -17,3 +17,12 @@ https://colinhuelsbusch.de/*.html
 
 https://colinhuelsbusch.de/*.js
   Content-Type: text/javascript; charset=utf-8
+
+https://colinhuelsbusch.de/*.png
+  Content-Type: image/png
+
+https://colinhuelsbusch.de/*.jpg
+  Content-Type: image/jpeg
+
+https://colinhuelsbusch.de/*.webp
+  Content-Type: image/webp
