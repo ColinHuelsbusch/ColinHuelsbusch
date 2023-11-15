@@ -2,6 +2,7 @@ https://colinhuelsbusch.de/*
   Cache-Control: max-age=31536000, immutable
 
 https://colinhuelsbusch.de/
+  Cache-Control: no-cache
   Content-Security-Policy: default-src 'none'; style-src 'sha256-RSFu6ue+P1HWtKlgNcjwty5B474tz77aqR13wdxqJiI='; script-src 'unsafe-inline' 'sha256-rKzpl3NoAXRCUkgBQUZj8VtrKf2ABgCTDKEpkfJIFhs='; img-src https://colinhuelsbusch.de/; font-src https://colinhuelsbusch.de/; worker-src https://colinhuelsbusch.de/; block-all-mixed-content; base-uri 'self'; manifest-src 'self';
   Onion-Location: http://huelsbuskfpgdyluq5kcunmiyknhbs32mhxu5tenztsfxuetj44umgqd.onion
   Permissions-Policy: accelerometer=(),autoplay=(),camera=(),display-capture=(),encrypted-media=(),fullscreen=(),gamepad=(),geolocation=(),gyroscope=(),magnetometer=(),microphone=(),midi=(),payment=(),picture-in-picture=(),publickey-credentials-get=(),sync-xhr=(self),usb=(),screen-wake-lock=(),web-share=(),xr-spatial-tracking=()
