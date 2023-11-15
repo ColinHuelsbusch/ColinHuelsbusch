@@ -7,6 +7,9 @@ https://colinhuelsbusch.de/
   Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
   X-Content-Type-Options: nosniff
 
+https://colinhuelsbusch.de/favicon.ico
+  Cache-Control: max-age=31536000, immutable
+
 https://colinhuelsbusch.de/manifest.webmanifest
   Content-Type: application/manifest+json; charset=utf-8
   Cache-Control: max-age=31536000, immutable
