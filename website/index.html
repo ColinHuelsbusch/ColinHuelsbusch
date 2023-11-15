@@ -93,12 +93,16 @@
 				margin-right: 8vmin;
 				background: #ccdee8 no-repeat center center;
 				background-image: url("picture.jpg");
-				background-image: image-set(
-					"picture.webp" type("image/webp"),
-					"picture.jpg" type("image/jpeg")
-				);
 				background-size: contain;
 				border-radius: 50%;
+			}
+			@supports (background-image: image-set) {
+				.picture {
+					background-image: image-set(
+						"picture.webp" type("image/webp"),
+						"picture.jpg" type("image/jpeg")
+					);
+				}
 			}
 			h1 {
 				color: #ccdee8;
@@ -143,11 +147,15 @@
 				margin-left: 4vmin;
 				margin-right: 2vmin;
 				background-image: url("certification.png");
-				background-image: image-set(
-					"certification.webp" type("image/webp"),
-					"certification.png" type("image/png")
-				);
 				background-size: auto 100%;
+			}
+			@supports (background-image: image-set) {
+				.badge .img {
+					background-image: image-set(
+						"certification.webp" type("image/webp"),
+						"certification.png" type("image/png")
+					);
+				}
 			}
 			.badge a {
 				height: 10vw;
