@@ -2,11 +2,32 @@ https://colinhuelsbusch.de/*
   Cache-Control: max-age=31536000, immutable
 
 https://colinhuelsbusch.de/
-  Cache-Control: max-age=31536000, immutable
   Content-Security-Policy: default-src 'none'; style-src 'sha256-qzYA7zE1+mBlENgmyki8o62IknBPIaILD4WghZfl/Wc='; script-src unsafe-inline 'sha256-rKzpl3NoAXRCUkgBQUZj8VtrKf2ABgCTDKEpkfJIFhs='; img-src https://colinhuelsbusch.de/; font-src https://colinhuelsbusch.de/; worker-src https://colinhuelsbusch.de/; block-all-mixed-content; base-uri 'self'; manifest-src 'self';
   Onion-Location: http://huelsbuskfpgdyluq5kcunmiyknhbs32mhxu5tenztsfxuetj44umgqd.onion
   Permissions-Policy: accelerometer=(),autoplay=(),camera=(),display-capture=(),encrypted-media=(),fullscreen=(),gamepad=(),geolocation=(),gyroscope=(),magnetometer=(),microphone=(),midi=(),payment=(),picture-in-picture=(),publickey-credentials-get=(),sync-xhr=(self),usb=(),screen-wake-lock=(),web-share=(),xr-spatial-tracking=()
   Referrer-Policy: no-referrer
-  Strict-Transport-Security: max-age=31536000 ; includeSubDomains ; preload
+  Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
   X-Content-Type-Options: nosniff
   X-Frame-Options: deny
+
+https://colinhuelsbusch.de/manifest.webmanifest
+  Cache-Control: max-age=31536000, immutable
+  Content-Type: application/manifest+json; charset=utf-8
+
+https://colinhuelsbusch.de/*.html
+  Content-Type: text/html; charset=utf-8
+
+https://colinhuelsbusch.de/*.png
+  Content-Type: image/png; charset=utf-8
+
+https://colinhuelsbusch.de/*.jpg
+  Content-Type: image/jpeg; charset=utf-8
+
+https://colinhuelsbusch.de/*.webp
+  Content-Type: image/webp; charset=utf-8
+
+https://colinhuelsbusch.de/*.woff2
+  Content-Type: font/woff2; charset=utf-8
+
+https://colinhuelsbusch.de/*.woff
+  Content-Type: font/woff; charset=utf-8
