@@ -1,3 +1,3 @@
 - 👋 Hi, I’m @ColinHuelsbusch
-- 👀 I’m interested in IT security, cloud architecture & software development
+- 👀 I’m interested in 🔒 IT security, ☁️ cloud architecture & :octocat: software development
 - 📫 How to reach me: mail@colin-huelsbusch.de
