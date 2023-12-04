@@ -1,3 +1,3 @@
-- 👋 Hi, I’m @huelsbusch
+- 👋 Hi, I’m @ColinHuelsbusch
 - 👀 I’m interested in IT security, cloud architecture & software development
-- 📫 How to reach me: huelsbusch@nuu.one
+- 📫 How to reach me: mail@colin-huelsbusch.de
