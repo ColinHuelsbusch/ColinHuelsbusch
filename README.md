@@ -4,4 +4,4 @@
 
 [![GitHub Streak](https://github-readme-streak-stats.herokuapp.com?user=ColinHuelsbusch&theme=transparent&hide_border=true&border_radius=5)](https://git.io/streak-stats)
 
-[![HTB Badge](https://www.hackthebox.eu/badge/image/454171)](https://www.hackthebox.eu/home/users/profile/454171)
+[![HTB Stats](https://www.hackthebox.eu/badge/image/454171)](https://www.hackthebox.eu/home/users/profile/454171)
