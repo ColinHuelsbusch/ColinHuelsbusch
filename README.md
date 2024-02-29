@@ -1,6 +1,6 @@
-- 👋 Hi, I’m @ColinHuelsbusch
-- 👀 I’m interested in information security, cloud architecture & software development
-- 📫 How to reach me: mail@colin-huelsbusch.de
+👋 Hi, I’m @ColinHuelsbusch
+👀 I’m interested in information security, cloud architecture & software development
+📫 How to reach me: mail@colin-huelsbusch.de
 
 <a href="https://app.hackthebox.com/profile/454171"><img src="https://www.hackthebox.com/badge/image/454171" alt="HackTheBox" height="50"/></a>
 <a href="https://tryhackme.com/p/ColinHuelsbusch"><img src="https://tryhackme-badges.s3.amazonaws.com/ColinHuelsbusch.png?v=1" alt="TryHackMe" height="50"/></a>
