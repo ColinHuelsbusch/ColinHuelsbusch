@@ -1,4 +1,4 @@
-Hi, I’m @ColinHuelsbusch
+Hi, I’m Colin Hülsbusch
 
 I’m interested in information security, cloud architecture & software development
 
