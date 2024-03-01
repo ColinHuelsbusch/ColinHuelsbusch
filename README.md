@@ -11,9 +11,9 @@ Reach out via email at <a href="mailto:mail@colin-huelsbusch.de">mail@colin-huel
 
 #### Certifications
 - [Certified Information Systems Security Professional (CISSP)](https://www.credly.com/badges/efc7f2f8-3b7e-4841-8d8d-2a2f961986fb)
-- [AWS Certified Solutions Architect Professional](https://www.credly.com/badges/41d5645b-8f84-46ee-bfa9-2f7312d35752)
-- [AWS Certified DevOps Engineer Professional](https://www.credly.com/badges/c186c7d9-014c-4be5-8bfb-a8487e47226e)
-- [Professional Scrum Master I (PSM I)](https://www.credly.com/badges/6b5682ff-bb20-40f4-8043-6b36b91066ab)
+- [AWS Certified Solutions Architect Professional](https://cp.certmetrics.com/amazon/en/public/verify/credential/BEGMVSFD3JF1QL5V)
+- [AWS Certified DevOps Engineer Professional](https://cp.certmetrics.com/amazon/en/public/verify/credential/C590VFTBMN111QSR)
+- [Professional Scrum Master I (PSM I)](https://www.scrum.org/user/179841)
 - [Microsoft 365 Certified Teams Administrator Associate](https://learn.microsoft.com/api/credentials/share/de-de/ColinHuelsbusch/9D24E8BE82CA7540)
 - [Microsoft Certified Security, Compliance, and Identity Fundamentals](https://learn.microsoft.com/api/credentials/share/de-de/ColinHuelsbusch/851C4BF642092C06)
 - [Microsoft Certified Azure Fundamentals](https://learn.microsoft.com/api/credentials/share/de-de/ColinHuelsbusch/822B40DF387613AE)
@@ -22,8 +22,8 @@ Reach out via email at <a href="mailto:mail@colin-huelsbusch.de">mail@colin-huel
 - [Microsoft Certified Power Platform Fundamentals](https://learn.microsoft.com/api/credentials/share/de-de/ColinHuelsbusch/5D07D2DDA14F4458)
 - [Microsoft Certified Dynamics 365 Fundamentals (CRM)](https://learn.microsoft.com/api/credentials/share/de-de/ColinHuelsbusch/C40A8D710B663044)
 - [Microsoft Certified Dynamics 365 Fundamentals (ERP)](https://learn.microsoft.com/api/credentials/share/de-de/ColinHuelsbusch/54DAECFBB140EAF3)
-- [AWS Certified Solutions Architect Associate](https://www.credly.com/badges/a2086fe6-a17a-4737-8bec-8c2f1329b6fa)
-- [AWS Certified SysOps Administrator Associate](https://www.credly.com/badges/dd9e7e74-2f90-4798-bf55-156102ac1a8c)
+- [AWS Certified Solutions Architect Associate](https://cp.certmetrics.com/amazon/en/public/verify/credential/TX3RQXFCGJREQXSJ)
+- [AWS Certified SysOps Administrator Associate](https://cp.certmetrics.com/amazon/en/public/verify/credential/5M4FS8DKE1V4Q0K1)
    
 #### Important Accomplishments on TryHackMe
 <!--- - [Monthly Hacker]()-->
