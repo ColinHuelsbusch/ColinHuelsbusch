@@ -29,7 +29,7 @@ Reach out via email at <a href="mailto:mail@colin-huelsbusch.de">mail@colin-huel
 <!--- - [Monthly Hacker]()-->
 - [WindCorp Series](https://tryhackme.com/ColinHuelsbusch/badges/windcorp)
 - [Red Teamer of the Month](https://tryhackme.com/ColinHuelsbusch/badges/redteamcapstone)
-- [And more on my profile](https://tryhackme.com/p/ColinHuelsbusch)
+- [More on my profile](https://tryhackme.com/p/ColinHuelsbusch)
 
 #### Completed TryHackMe Learning Paths
 <!--- - [Attacking and Defending AWS]())
