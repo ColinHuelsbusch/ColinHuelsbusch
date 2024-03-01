@@ -25,7 +25,7 @@ Reach out via email at <a href="mailto:mail@colin-huelsbusch.de">mail@colin-huel
 - [AWS Certified Solutions Architect Associate](https://cp.certmetrics.com/amazon/en/public/verify/credential/TX3RQXFCGJREQXSJ)
 - [AWS Certified SysOps Administrator Associate](https://cp.certmetrics.com/amazon/en/public/verify/credential/5M4FS8DKE1V4Q0K1)
    
-#### Important Accomplishments on TryHackMe
+#### Accomplishments on TryHackMe
 <!--- - [Monthly Hacker]()-->
 - [WindCorp Series](https://tryhackme.com/ColinHuelsbusch/badges/windcorp)
 - [Red Teamer of the Month](https://tryhackme.com/ColinHuelsbusch/badges/redteamcapstone)
