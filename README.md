@@ -6,8 +6,8 @@ Reach out via email at <a href="mailto:mail@colin-huelsbusch.de">mail@colin-huel
 ![GitHub Streak](https://github-readme-streak-stats.herokuapp.com?user=ColinHuelsbusch&theme=transparent&hide_border=true)
 
 #### InfoSec Badges
-<a href="https://app.hackthebox.com/profile/454171"><img src="https://www.hackthebox.com/badge/image/454171?v=2" alt="HackTheBox" height="50"/></a>
-<a href="https://tryhackme.com/p/ColinHuelsbusch"><img src="https://tryhackme-badges.s3.amazonaws.com/ColinHuelsbusch.png?v=2" alt="TryHackMe" height="50"/></a>
+<a href="https://app.hackthebox.com/profile/454171"><img src="https://www.hackthebox.com/badge/image/454171?v=3" alt="HackTheBox" height="50"/></a>
+<a href="https://tryhackme.com/p/ColinHuelsbusch"><img src="https://tryhackme-badges.s3.amazonaws.com/ColinHuelsbusch.png?v=3" alt="TryHackMe" height="50"/></a>
 
 #### Certifications
 - [Certified Information Systems Security Professional (CISSP)](https://www.credly.com/badges/efc7f2f8-3b7e-4841-8d8d-2a2f961986fb)
@@ -26,7 +26,7 @@ Reach out via email at <a href="mailto:mail@colin-huelsbusch.de">mail@colin-huel
 - [AWS Certified SysOps Administrator Associate](https://cp.certmetrics.com/amazon/en/public/verify/credential/5M4FS8DKE1V4Q0K1)
    
 #### TryHackMe Accomplishments
-<!--- - [Monthly Hacker]()-->
+- [Monthly Hacker](https://tryhackme.com/ColinHuelsbusch/badges/hacker-of-the-month)
 - [WindCorp Series](https://tryhackme.com/ColinHuelsbusch/badges/windcorp)
 - [Red Teamer of the Month](https://tryhackme.com/ColinHuelsbusch/badges/redteamcapstone)
 - [More on my profile](https://tryhackme.com/p/ColinHuelsbusch)
