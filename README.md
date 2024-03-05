@@ -28,7 +28,7 @@ Reach out via email at <a href="mailto:mail@colin-huelsbusch.de">mail@colin-huel
 #### TryHackMe Accomplishments
 - [Monthly Hacker](https://tryhackme.com/ColinHuelsbusch/badges/hacker-of-the-month) (Being the top hacker of the month)
 - [WindCorp Series](https://tryhackme.com/ColinHuelsbusch/badges/windcorp) (Completing the WindCorp series)
-- [Red Teamer of the Month](https://tryhackme.com/ColinHuelsbusch/badges/redteamcapstone)
+- [Red Teamer of the Month](https://tryhackme.com/ColinHuelsbusch/badges/redteamcapstone) (Completing the Red Team Capstone Challenge)
 - [More on my profile](https://tryhackme.com/p/ColinHuelsbusch)
 
 #### TryHackMe Certificates
