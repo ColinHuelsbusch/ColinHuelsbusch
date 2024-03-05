@@ -6,8 +6,8 @@ Reach out via email at <a href="mailto:mail@colin-huelsbusch.de">mail@colin-huel
 ![GitHub Streak](https://github-readme-streak-stats.herokuapp.com?user=ColinHuelsbusch&theme=transparent&hide_border=true)
 
 #### InfoSec Badges
-<a href="https://app.hackthebox.com/profile/454171"><img src="https://www.hackthebox.com/badge/image/454171?v=3" alt="HackTheBox" height="50"/></a>
-<a href="https://tryhackme.com/p/ColinHuelsbusch"><img src="https://tryhackme-badges.s3.amazonaws.com/ColinHuelsbusch.png?v=3" alt="TryHackMe" height="50"/></a>
+<a href="https://app.hackthebox.com/profile/454171"><img src="https://www.hackthebox.com/badge/image/454171?v=4" alt="HackTheBox" height="50"/></a>
+<a href="https://tryhackme.com/p/ColinHuelsbusch"><img src="https://tryhackme-badges.s3.amazonaws.com/ColinHuelsbusch.png?v=4" alt="TryHackMe" height="50"/></a>
 
 #### Certifications
 - [Certified Information Systems Security Professional (CISSP)](https://www.credly.com/badges/efc7f2f8-3b7e-4841-8d8d-2a2f961986fb)
@@ -36,8 +36,8 @@ Reach out via email at <a href="mailto:mail@colin-huelsbusch.de">mail@colin-huel
 - [SOC Level 2]()
 - [SOC Level 1]() 
 - [Red Teaming]()
-- [Cyber Defense]()
-- [DevSecOps]() -->
+- [Cyber Defense]() -->
+- [DevSecOps](https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-1JGNDIVIJE.png)
 - [Offensive Pentesting](https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-YPCA2YPZ20.png)
 - [Jr Penetration Tester](https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-WREDMX8X3Y.png)
 - [CompTIA Pentest+](https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-V5YRYVH6ZX.png)
