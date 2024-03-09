@@ -38,8 +38,8 @@ Reach out via email at <a href="mailto:mail@colin-huelsbusch.de">mail@colin-huel
 <!--- - [Attacking and Defending AWS]())
 - [SOC Level 2]()
 - [SOC Level 1]() 
-- [Red Teaming]()
-- [Cyber Defense]() -->
+- [Red Teaming]() -->
+- [Cyber Defense](https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-LXMGEZFW5I.png)
 - [DevSecOps](https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-1JGNDIVIJE.png)
 - [Offensive Pentesting](https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-YPCA2YPZ20.png)
 - [Jr Penetration Tester](https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-WREDMX8X3Y.png)
