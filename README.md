@@ -6,8 +6,8 @@ Reach out via email at <a href="mailto:mail@colin-huelsbusch.de">mail@colin-huel
 <a href="https://github.com/ColinHuelsbusch/">![GitHub Streak](https://github-readme-streak-stats.herokuapp.com?user=ColinHuelsbusch&theme=transparent&hide_border=true)</a>
 
 #### HackTheBox & TryHackMe Stats
-<a href="https://app.hackthebox.com/profile/454171"><img src="https://www.hackthebox.com/badge/image/454171?v=8" alt="HackTheBox" height="50"/></a>
-<a href="https://tryhackme.com/p/ColinHuelsbusch"><img src="https://tryhackme-badges.s3.amazonaws.com/ColinHuelsbusch.png?v=8" alt="TryHackMe" height="50"/></a>
+<a href="https://app.hackthebox.com/profile/454171"><img src="https://www.hackthebox.com/badge/image/454171?v=9" alt="HackTheBox" height="50"/></a>
+<a href="https://tryhackme.com/p/ColinHuelsbusch"><img src="https://tryhackme-badges.s3.amazonaws.com/ColinHuelsbusch.png?v=9" alt="TryHackMe" height="50"/></a>
 
 #### Leetcode Stats
 <a href="https://leetcode.com/ColinHuelsbusch/">![LeetCode Stats](https://leetcard.jacoblin.cool/ColinHuelsbusch?theme=nord&font=Noto%20Sans&ext=heatmap)</a>
@@ -37,8 +37,8 @@ Reach out via email at <a href="mailto:mail@colin-huelsbusch.de">mail@colin-huel
 #### TryHackMe Certificates
 <!--- - [Attacking and Defending AWS]())
 - [SOC Level 2]()
-- [SOC Level 1]() 
-- [Red Teaming]() -->
+- [SOC Level 1]() -->
+- [Red Teaming](https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-QEJ5PEJJEM.png)
 - [Cyber Defense](https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-LXMGEZFW5I.png)
 - [DevSecOps](https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-1JGNDIVIJE.png)
 - [Offensive Pentesting](https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-YPCA2YPZ20.png)
