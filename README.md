@@ -6,8 +6,8 @@ Reach out via email at <a href="mailto:mail@colin-huelsbusch.de">mail@colin-huel
 <a href="https://github.com/ColinHuelsbusch/">![GitHub Streak](https://github-readme-streak-stats.herokuapp.com?user=ColinHuelsbusch&theme=transparent&hide_border=true)</a>
 
 #### HackTheBox & TryHackMe Stats
-<a href="https://app.hackthebox.com/profile/454171"><img src="https://www.hackthebox.com/badge/image/454171?v=2" alt="HackTheBox" height="50"/></a>
-<a href="https://tryhackme.com/p/ColinHuelsbusch"><img src="https://tryhackme-badges.s3.amazonaws.com/ColinHuelsbusch.png?v=2" alt="TryHackMe" height="50"/></a>
+<a href="https://app.hackthebox.com/profile/454171"><img src="https://www.hackthebox.com/badge/image/454171?v=3" alt="HackTheBox" height="50"/></a>
+<a href="https://tryhackme.com/p/ColinHuelsbusch"><img src="https://tryhackme-badges.s3.amazonaws.com/ColinHuelsbusch.png?v=3" alt="TryHackMe" height="50"/></a>
 
 #### Leetcode Stats
 <a href="https://leetcode.com/ColinHuelsbusch/">![LeetCode Stats](https://leetcard.jacoblin.cool/ColinHuelsbusch?theme=nord&font=Noto%20Sans&ext=heatmap)</a>
