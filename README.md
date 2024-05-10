@@ -5,8 +5,6 @@ Reach out via email at <a href="mailto:mail@colin-huelsbusch.de">mail@colin-huel
 #### HackTheBox & TryHackMe Stats
 <a href="https://app.hackthebox.com/profile/454171"><img src="https://www.hackthebox.com/badge/image/454171?v=7" alt="HackTheBox" height="50"/></a>
 <a href="https://tryhackme.com/p/ColinHuelsbusch"><img src="https://tryhackme-badges.s3.amazonaws.com/ColinHuelsbusch.png?v=7" alt="TryHackMe" height="50"/></a>
-#### Leetcode Stats
-<a href="https://leetcode.com/ColinHuelsbusch/">![LeetCode Stats](https://leetcard.jacoblin.cool/ColinHuelsbusch?theme=nord&font=Noto%20Sans&ext=heatmap)</a>
 
 #### Certifications
 - [Certified Information Systems Security Professional (CISSP)](https://www.credly.com/badges/efc7f2f8-3b7e-4841-8d8d-2a2f961986fb)
