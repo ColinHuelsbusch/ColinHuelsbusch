@@ -1,5 +1,5 @@
 Hi, I'm Colin Hülsbusch.<br>
-I have a strong passion for `IT Management`, `Information Security`, `Cloud Architecture`, and `Software Development`.<br>
+I have a strong passion for `IT Management`, `Artificial Intelligence`, `Information Security`, `Cloud Architecture`, and `Software Development`.<br>
 Reach out via email at <a href="mailto:mail@colin-huelsbusch.de">mail@colin-huelsbusch.de</a> or connect on <a href="https://www.linkedin.com/in/ColinHuelsbusch">LinkedIn</a>.
 
 #### HackTheBox & TryHackMe Stats
