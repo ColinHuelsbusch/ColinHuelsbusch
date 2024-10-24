@@ -39,6 +39,7 @@ Reach out via email at <a href="mailto:mail@colinhuelsbusch.de">mail@colinhuelsb
 - [Jr Penetration Tester](https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-WREDMX8X3Y.png)
 - [CompTIA Pentest+](https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-V5YRYVH6ZX.png)
 - [Security Engineer](https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-0ZUWOSTAQY.png)
+- [Cyber Security 101](https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-ATOUKIYTE4.png)
 - [Introduction to Cyber Security](https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-L1PDDYHFWJ.png)
 - [Pre Security](https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-FEBVBEOZLA.png)
 - [Web Fundamentals](https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-ZORVBBGHUR.png)
