@@ -1,6 +1,6 @@
 https://eierschaukel.de/
   Cache-Control: no-cache
-  Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; script-src 'unsafe-inline' 'sha256-rKzpl3NoAXRCUkgBQUZj8VtrKf2ABgCTDKEpkfJIFhs='; img-src https://eierschaukel.de/; font-src https://eierschaukel.de/; worker-src https://eierschaukel.de/; block-all-mixed-content; base-uri 'self'; manifest-src 'self';
+  Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; script-src 'unsafe-inline'; img-src https://eierschaukel.de/; font-src https://eierschaukel.de/; worker-src https://eierschaukel.de/; block-all-mixed-content; base-uri 'self'; manifest-src 'self';
   Permissions-Policy: accelerometer=(),autoplay=(),camera=(),display-capture=(),encrypted-media=(),fullscreen=(),gamepad=(),geolocation=(),gyroscope=(),magnetometer=(),microphone=(),midi=(),payment=(),picture-in-picture=(),publickey-credentials-get=(),sync-xhr=(self),usb=(),screen-wake-lock=(),web-share=(),xr-spatial-tracking=()
   Referrer-Policy: no-referrer
   Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
