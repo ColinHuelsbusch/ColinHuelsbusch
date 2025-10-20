@@ -1,0 +1,1011 @@
+<!DOCTYPE html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>Die Eierschaukel</title>
+<meta name="description" content="Mach mit - Einfach mal die Eier schaukeln!">
+<link rel="author" href="Colin Hülsbusch">
+<link rel="publisher" href="Colin Hülsbusch">
+<meta itemprop="name" content="Die Eierschaukel">
+<meta itemprop="description" content="Mach mit - Einfach mal die Eier schaukeln!">
+<meta itemprop="image" content="http://eierschaukel.com/eierschaukel.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@ColinHuelsbusch">
+<meta name="twitter:title" content="Die Eierschaukel">
+<meta name="twitter:description" content="Mach mit - Einfach mal die Eier schaukeln!">
+<meta name="twitter:creator" content="@ColinHuelsbusch">
+<meta name="twitter:image:src" content="http://eierschaukel.com/eierschaukel.jpg">
+<meta property="og:title" content="Die Eierschaukel">
+<meta property="og:type" content="website">
+<meta property="og:url" content="http://eierschaukel.com/">
+<meta property="og:image" content="http://eierschaukel.com/eierschaukel.jpg">
+<meta property="og:description" content="Mach mit - Einfach mal die Eier schaukeln!">
+<meta property="og:site_name" content="Die Eierschaukel">
+<link rel="icon" type="image/png" href="favicon.png">
+<style>
+  @font-face {
+    font-family: 'Chewy';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Chewy'), url(chewy.ttf) format('truetype');
+  }
+  .sprites { background: url(sprites.png) no-repeat; }
+  .cloud1 { width: 433px; height: 182px; background-position: 0 0; }
+  .cloud2 { width: 279px; height: 128px; background-position: -300px -292px; }
+  .cloud3 { width: 299px; height: 135px; background-position: 0 -183px; }
+  .cloud4 { width: 262px; height: 125px; background-position: -681px -204px; }
+  .egg1-1a { width: 100px; height: 126px; background-position: -639px 0; }
+  .egg1-1b { width: 100px; height: 126px; background-position: -434px -165px; }
+  .egg1-2a { width: 100px; height: 126px; background-position: -580px -178px; }
+  .egg1-2b { width: 100px; height: 126px; background-position: -944px -204px; }
+  .egg1-3a { width: 100px; height: 126px; background-position: 0 -319px; }
+  .egg1-3b { width: 100px; height: 126px; background-position: -101px -319px; }
+  .egg1-4a { width: 100px; height: 126px; background-position: -721px -330px; }
+  .egg1-4b { width: 100px; height: 126px; background-position: -923px -331px; }
+  .egg1-5a { width: 100px; height: 126px; background-position: -203px -421px; }
+  .egg1-5b { width: 100px; height: 126px; background-position: -822px -440px; }
+  .egg2-1a { width: 100px; height: 126px; background-position: -102px -446px; }
+  .egg2-1b { width: 100px; height: 126px; background-position: -695px -457px; }
+  .egg2-2a { width: 100px; height: 126px; background-position: 0 -497px; }
+  .egg2-2b { width: 100px; height: 126px; background-position: -203px -548px; }
+  .egg2-3a { width: 100px; height: 126px; background-position: -796px -567px; }
+  .egg2-3b { width: 100px; height: 126px; background-position: -101px -573px; }
+  .egg2-4a { width: 100px; height: 126px; background-position: -763px -694px; }
+  .egg2-4b { width: 100px; height: 126px; background-position: -763px -821px; }
+  .egg2-5a { width: 100px; height: 126px; background-position: -763px -948px; }
+  .egg2-5b { width: 100px; height: 126px; background-position: -763px -1136px; }
+  .flower1 { width: 106px; height: 109px; background-position: -864px -755px; }
+  .flower2 { width: 66px; height: 109px; background-position: -654px -330px; }
+  .flower3 { width: 71px; height: 109px; background-position: -822px -330px; }
+  .flower4 { width: 49px; height: 88px; background-position: -864px -865px; }
+  .flower5 { width: 63px; height: 109px; background-position: -580px -366px; }
+  .grass { width: 2600px; height: 109px; background-position: 0 -1617px; }
+  .hills { width: 1600px; height: 203px; background-position: -740px 0; }
+  .hint { width: 235px; height: 62px; background-position: -405px -476px; }
+  .max { width: 50px; height: 50px; background-position: -639px -127px; }
+  .min { width: 50px; height: 50px; background-position: -644px -440px; }
+  .nuumedia { width: 74px; height: 20px; background-position: -2341px 0; }
+  .ropes { width: 100px; height: 319px; background-position: -304px -421px; }
+  .shine { width: 1476px; height: 1412px; background-position: -1045px -204px; }
+  .sound_off { width: 50px; height: 50px; background-position: 0 -446px; }
+  .sound_on { width: 50px; height: 50px; background-position: -51px -446px; }
+  .sun { width: 204px; height: 164px; background-position: -434px 0; }
+  .tree { width: 762px; height: 857px; background-position: 0 -741px; }
+  .tree_eyes1 { width: 73px; height: 60px; background-position: -580px -305px; }
+  .tree_eyes2 { width: 73px; height: 60px; background-position: -202px -675px; }
+  .tree_eyes3 { width: 73px; height: 60px; background-position: -864px -694px; }
+  .tree_eyes4 { width: 73px; height: 60px; background-position: -763px -1075px; }
+  * {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    border-collapse: collapse;
+    -webkit-tap-highlight-color:rgba(0,0,0,0);
+    -webkit-touch-callout: none;
+    outline: none;
+    user-select: none;
+    box-sizing: border-box;
+    -webkit-backface-visibility: hidden;
+  }
+  html {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+  }
+  body {
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    overflow: auto;
+    font-family: 'Chewy', sans-serif;
+    background: #f9f9f9;
+    letter-spacing: 1px;
+    -webkit-font-smoothing: antialiased;
+    color: #444;
+  }
+  h1{
+    font-size: 32px;
+    line-height: 35px;
+    margin-bottom: 15px;
+  }
+  input{
+    border: 3px solid #278cf7;
+    margin: 5px 0px;
+    padding: 6px 10px;
+    border-radius: 20px;
+    max-width: 100%;
+    font-size: 20px;
+    font-family: 'Chewy', sans-serif;
+    letter-spacing: 1px;
+    color: #444;
+    user-select: auto;
+  }
+  .btn{
+    border: 3px solid #1070d5;
+    background: #278cf7;
+    color: #fff;
+    text-shadow: 1px 2px 1px #033664;
+    box-shadow: inset 0px -13px 44px -20px #033664, inset 0px 23px 44px -20px #48afff;
+    padding: 4px 16px;
+    margin: 5px 0px;
+    border-radius: 20px;
+    font-size: 20px;
+    display: inline-block;
+    cursor: pointer;
+  }
+  #title{
+    margin: 8px 0px 0px 20px;
+  }
+  
+  #canvas{
+    position: absolute;
+    top: 50px;
+    bottom: 75px;
+    left: 0px;
+    right: 0px;
+    background: #e1f7fa;
+    background: -moz-linear-gradient(top,  #e1f7fa 0%, #278cf7 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e1f7fa), color-stop(100%,#278cf7));
+    background: -webkit-linear-gradient(top,  #e1f7fa 0%,#278cf7 100%);
+    background: -o-linear-gradient(top,  #e1f7fa 0%,#278cf7 100%);
+    background: -ms-linear-gradient(top,  #e1f7fa 0%,#278cf7 100%);
+    background: linear-gradient(to bottom,  #e1f7fa 0%,#278cf7 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e1f7fa', endColorstr='#278cf7',GradientType=0 );
+    z-index: 1;
+    transition: all 1s;
+    overflow: hidden;
+    box-shadow: 0px 3px 30px -5px #000, 0px 0px 1px 1px #123;
+  }
+  #canvas.fullscreen{
+    top: 0px;
+    bottom: 0px;
+    border: none;
+    box-shadow: none;
+  }
+  #nav_btn{
+    position: absolute;
+    top: 18px;
+    left: 18px;
+    z-index: 20;
+    cursor: pointer;
+    transform: translateZ(1000px);
+  }
+  #stage{
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    width: 730px;
+    height: 576px;
+    margin-left: -394px;
+    perspective: 1200px;
+    transform-style: preserve-3d;
+    transform: rotateY(0deg);
+    transform-origin: 50% 0%;
+    z-index: 3;
+    pointer-events: auto;
+  }
+  
+  @keyframes hint {
+  	from { transform: translateZ(60px) translateY(-178px); }
+  	to { transform: translateZ(54px) translateY(-178px); }
+  }
+  #hint{
+    position: absolute;
+    bottom: 0px;
+    left: 275px;
+    transform-style: preserve-3d;
+    transform: translateZ(60px) translateY(-178px);
+    animation-name: hint;
+    transform-origin: 50% 100%;
+    animation-duration: 0.33s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    z-index: 10;
+  }
+  #hint:before {
+    content: 'Klicke mehrmals auf die Eier, um sie zu schaukeln';
+    position: absolute;
+    top: -55px;
+    width: 205px;
+    left: 23px;
+    line-height: 26px;
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    font-size: 20px;
+    text-shadow: 0px 3px 0px rgba(0, 0, 0, 0.5);
+  }
+  #tree{
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    margin-bottom: -263px;
+    margin-left: -525px;
+    pointer-events: auto;
+  }
+  @keyframes birdeye {
+  	from { transform: rotate(160deg); }
+  	to { transform: rotate(240deg); }
+  }
+  div.birdeye{
+    position: absolute;
+    color: #332211;
+    top: 84px;
+    left: 318px;
+    width: 12px;
+    height: 12px;
+    line-height: 1px;
+    font-weight: bold;
+    font-family: Arial sans-serif;
+    transform-style: preserve-3d;
+    animation-name: birdeye;
+    animation-duration: 1.6s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+  div.birdeye.eye2{
+    top: 86px;
+    left: 330px;
+    width: 10px;
+    height: 10px;
+  }
+  #tree_eyes{
+    position: absolute;
+    top: 335px;
+    left: 240px;
+  }
+  div.swing{
+    position: absolute;
+    top: 212px;
+    width: 100px;
+    height: 320px;
+    transform-style: preserve-3d;
+    transform-origin: 50% 0%;
+    z-index: 3;
+    pointer-events: auto;
+  }
+  #swing1{
+    left: 251px;
+  }
+  #swing2{
+    left: 434px;
+  }
+  div.egg{
+    position: absolute;
+    bottom: 0px;
+    transform-origin: 50% 100%;
+    z-index: 6;
+  }
+  div.swinghandle{
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 185px;
+    height: 420px;
+    transform: translateZ(1000px) translateY(-55px);
+    z-index: 10;
+    cursor: pointer;
+  }
+  div.swinghandle.swing1{
+    margin-left: -185px;
+  }
+
+  div.sun{
+    position: absolute;
+    top: 35px;
+    right: 50px;
+    transform: translateZ(-1000px);
+    z-index: 3;
+  }
+  @keyframes shine {
+  	from { transform: rotate(0deg) translateZ(-1000px); }
+  	to { transform: rotate(360deg) translateZ(-1000px); }
+  }
+  div.shine{
+    position: absolute;
+    top: -570px;
+    right: -576px;
+    opacity: 0.4;
+    transform-style: preserve-3d;
+    animation-name: shine;
+    animation-duration: 350s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    z-index: 1;
+  }
+  div.hills{
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    margin-left: -800px;
+    transform: translateY(-30px) translateZ(-1000px);
+  }
+  div.grass{
+    position: absolute;
+    background-repeat: repeat-x;
+    bottom: -5px;
+    left: 50%;
+    margin-left: -1300px;
+    transform: translateZ(1000px);
+    z-index: 5;
+  }
+
+  @keyframes flower {
+  	from { transform: rotate(-5deg); }
+  	to { transform: rotate(5deg); }
+  }
+  div.flower{
+    position: absolute;
+    bottom: -1px;
+    left: 50%;
+    transform-style: preserve-3d;
+    animation-name: flower;
+    transform-origin: 50% 100%;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+  div.flower1{
+    left: 30%;
+    transform-origin: 10% 100%;
+  }
+  div.flower2{
+    left: 40%;
+  }
+  div.flower4{
+    left: 58%;
+  }
+  div.flower3{
+    left: 64%;
+    transform-origin: 70% 100%;
+  }
+  div.flower5{
+    left: 72%;
+  }
+
+  @keyframes cloud {
+    0% { transform: translateX(1600px); }
+    100% { transform: translateX(-500px); }
+  }
+  #clouds{
+    position: absolute;
+    top: -90px;
+    width: 100%;
+    height: 80%;
+    transform: translateZ(-1000px);
+  }
+  #clouds div{
+    position: absolute;
+    transform-style: preserve-3d;
+    animation-name: cloud;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    z-index: 2;
+  }
+  #clouds div:nth-child(1){
+    top: 15%;
+    animation-delay: -50s;
+    animation-duration: 350s;
+  }
+  #clouds div:nth-child(2){
+    top: 37%;
+    animation-delay: -225s;
+    animation-duration: 275s;
+  }
+  #clouds div:nth-child(3){
+    top: 22%;
+    animation-delay: -175s;
+    animation-duration: 300s;
+  }
+  #clouds div:nth-child(4){
+    top: 30%;
+    animation-delay: -100s;
+    animation-duration: 325s;
+  }
+
+  #header,
+  #footer{
+    position: fixed;
+    left: 0px;
+    width: 100%;
+    background: #444;
+    color: #fff;
+    text-shadow: 1px 2px 1px #000;
+  }
+  #header{
+    top: 0px;
+    height: 50px;
+  }
+  #footer {
+    bottom: 0px;
+    height: 75px;
+  }
+  #sound_btn{
+    position: absolute;
+    top: 0px;
+    right: 4px;
+    cursor: pointer;
+  }
+  #imprint_btn{
+    right: 70px;
+    position: absolute;
+    top: 8px;
+    display: inline-block;
+    cursor: pointer;
+    font-size: 15px;
+    line-height: 15px;
+    text-align: right;
+    text-shadow: 1px 1px 1px #000;
+  }
+  #imprint_btn img{
+    margin-right: 2px;
+  }
+  #nomination_btn {
+    left: 20px;
+    position: absolute;
+    bottom: 12px;
+    display: inline-block;
+    cursor: pointer;
+  }
+  .popup{
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 200;
+    transform: translateZ(2000px);
+    display: none;
+  }
+  .popup_box {
+    width: 80%;
+    max-width: 425px;
+    top: 60px;
+    position: relative;
+    transform: translateZ(2001px);
+    margin: 0 auto;
+    bottom: 130px;
+    background: #278cf7;
+    box-shadow: 0 0 150px -30px rgba(0, 0, 0, 0.7), 0 0 0px 1000px rgba(255, 255, 255, 0.7);
+    border-radius: 18px;
+    padding: 10px;
+  }
+  .popup_box > div{
+    width: 100%;
+    height: 100%;
+    max-height: 480px;
+    background: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    overflow: scroll;
+  }
+  .popup_box > div.popup_close{
+    position: absolute;
+    top: -16px;
+    right: -16px;
+    width: 48px;
+    height: 48px;
+    background: #fff;
+    border: 3px solid #444;
+    border-radius: 50%;
+    line-height: 1px;
+    font-size: 31px;
+    font-weight: bold;
+    padding: 18px 0px 0px 2px;
+    text-align: center;
+    cursor: pointer;
+  }
+  #counter{
+    position:absolute;
+    bottom: -2px;
+    left: 50%;
+    margin-left: -130px;
+    width: 260px;
+    height: 50px;
+    letter-spacing: 0;
+    line-height: 42px;
+    color: #fff;
+  }
+  #counter:before{
+    position: absolute;
+    bottom: 53px;
+    left: 45px;
+    line-height: 1px;
+    content: 'Du schaukelst die Eier seit';
+  }
+  #counter div{
+    font-size: 35px;
+    display: inline-block;
+    width: 50px;
+    text-align: right;
+  }
+  #counter span{
+    font-size: 13px;
+    display: inline-block;
+    margin-left: 4px;
+    color: #fff;
+  }
+
+  #eggnames{
+    position: absolute;
+    bottom: 10px;
+    left: 5%;
+    width: 90%;
+    color: #fff;
+    font-size: 30px;
+    text-shadow: 0px 3px 0px rgba(0, 0, 0, 0.5);
+    z-index: 10;
+    transform: translateZ(1001px);
+    text-align: center;
+  }
+  div.grass_flip {
+    bottom: -24px;
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+  }
+  #share {
+    display: block;
+    position: absolute;
+    bottom: 30px;
+    right: 20px;
+    z-index: 150;
+  }
+  .sharer-0 label {
+    background: none !important;
+    padding: 0 !important;
+  }
+  .sharer-0 label span {
+    text-transform: none !important;
+    font-size: 20px !important;
+    font-family: 'Chewy', sans-serif !important;
+    font-weight: normal !important;
+    color: #fff;
+    text-shadow: 1px 2px 1px #033664;
+    box-shadow: inset 0px -13px 44px -20px #033664, inset 0px 23px 44px -20px #48afff;
+    border: 3px solid #1070D5;
+    background: #278CF7;
+    padding: 4px 16px !important;
+    margin: 5px 0px;
+    border-radius: 20px;
+  }
+  .sharer-0 .social ul {
+    border-radius: 20px;
+  }
+  .sharer-0 .social li[class*=twitter] {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+  }
+  .sharer-0 .social li[class*=gplus] {
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+  .entypo-facebook:before {
+    margin-right: -3px;
+  }
+  @media (max-height: 920px) and (min-height: 800px) and (max-width: 480px),
+         (max-width: 900px) and (max-height: 800px) {
+    div.sun{
+      top: -25px;
+      right: -40px;
+    }
+    div.shine{
+      top: -650px;
+      right: -667px;
+    }
+  }
+  @media (max-height: 860px) and (max-width: 680px),
+         (max-height: 470px){
+    div.sun{
+      display: none;
+    }
+    div.shine{
+      top: -720px;
+      right: -766px;
+    }
+  }
+  @media (max-width: 800px) {
+    #counter{
+      margin-left: -100px;
+    }
+  }
+  @media (max-width: 700px) {
+    #counter{
+      display: none;
+    }
+  }
+  @media (max-height: 640px) {
+    #clouds{
+      display: none;
+    }
+    .popup_box {
+      top: 26px;
+    }
+  }
+  @media (max-width: 444px){ 
+    #title{ font-size: 24px; } 
+  }
+  @media (max-width: 400px){ 
+    #title{ margin-left: 10px; } 
+    #nav_btn{ left: 10px; }
+  }
+  @media (max-width: 360px){ 
+    h1{ font-size: 22px; line-height: 20px; } 
+    #title{ font-size: 0px; } 
+    #title:before{ content: 'Eierschaukel'; font-size: 22px; } 
+  }
+</style>
+
+<div id="fb-root"></div>
+<div id="header">
+  <h1 id="title">Die Eierschaukel</h1>
+  <div id="sound_btn" class="sprites sound_on"></div>
+  <div id="imprint_btn">
+    <span style="font-size:10px;">by</span> <div class="sprites nuumedia" style="display:inline-block;margin-bottom:-3px;"></div><br>Impressum
+  </div>
+</div>
+
+<div id="canvas">
+  <div id="nav_btn" class="sprites max"></div>
+  <div id="clouds">
+    <div class="sprites cloud1"></div>
+    <div class="sprites cloud2"></div>
+    <div class="sprites cloud3"></div>
+    <div class="sprites cloud4"></div>
+  </div>
+  <div id="stage">
+    <div id="hint" class="sprites hint" style="display: none;"></div>
+    <div id="swing1" class="swing sprites ropes" style="transform: rotateX(3.57236deg);">
+      <div class="sprites egg egg1-1a" style="transform: rotateX(-3.57236deg);"></div>
+    </div>
+    <div id="swing2" class="swing sprites ropes" style="transform: rotateX(-42.0915deg);">
+      <div class="sprites egg egg2-5a" style="transform: rotateX(42.0915deg);"></div>
+    </div>
+  </div>
+  <div class="sprites hills"></div>
+  <div id="tree" class="sprites tree">
+    <div class="birdeye eye1">.</div>
+    <div class="birdeye eye2">.</div>
+    <div id="tree_eyes" class="sprites tree_eyes2"></div>
+  </div>
+  <div class="sprites shine"></div>
+  <div class="sprites sun"></div>
+  <div class="sprites grass">
+    <div class="sprites flower flower1"></div>
+    <div class="sprites flower flower2"></div>
+    <div class="sprites flower flower3"></div>
+    <div class="sprites flower flower4"></div>
+    <div class="sprites flower flower5"></div>
+  </div>
+  <div class="sprites grass grass_flip"></div>
+  <div id="eggnames">
+    <p></p>
+  </div>
+  <div class="swinghandle swing1"></div>
+  <div class="swinghandle swing2"></div>
+</div>
+
+<div id="footer">
+  <div id="nomination_btn" class="btn">Eier benennen</div>
+  <div id="counter">
+    <div class="counter_days">00</div><span>d</span>
+    <div class="counter_hours">00</div><span>h</span>
+    <div class="counter_minutes active">00</div><span>m</span>
+    <div class="counter_seconds active">00</div><span>s</span>
+  </div>
+</div>
+<div id="imprint" class="popup">
+  <div class="popup_box">
+    <div class="popup_close">x</div>
+    <div class="popup_content">
+      Colin Hülsbusch<br>
+      Bergbrede 22<br>
+      32361 Preußisch Oldendorf<br>
+      <br>
+      Website: <a href="http://nuumedia.de/" target="_blank">http://nuumedia.de</a><br>
+      E-Mail: <a href="mailto:kontakt@nuumedia.de" target="_blank">kontakt@nuumedia.de</a><br>
+      <br>
+      <div style="font-size:60%">
+        Musik: Monkeys Spinning Monkeys - Kevin MacLeod (incompetech.com)
+      </div>
+    </div>
+  </div>
+</div>
+<div id="nomination" class="popup">
+  <div class="popup_box">
+    <div class="popup_close">x</div>
+    <div class="popup_content">
+      <h1>Gib den Eiern Namen!</h1>
+      <p>Hier kannst du den Eiern Namen geben. Wenn du dann die Eierschaukel teilst, sehen deine Freunde die Namen, die du den beiden Eiern gegeben hast.</p>
+      <br>
+      <p>Wie sollen die Eier heißen?</p>
+      <input id="eggname1" type="text" placeholder="Linkes Ei" value=""><br>
+      <input id="eggname2" type="text" placeholder="Rechtes Ei" value=""><br>
+      <div id="nomination_submit" class="btn">Speichern</div>
+    </div>
+  </div>
+</div>
+
+
+<div id="wrongbrowser" class="popup">
+  <div class="popup_box">
+    <div class="popup_content">
+      Du benutzt einen <strong>veralteten</strong> Browser. 
+      Bitte <a href="http://browsehappy.com/">aktualisiere Deinen Browser</a>, um die Eierschaukel nutzen zu können.
+    </div>
+  </div>
+</div>
+<div id="wrongdevice" class="popup">
+  <div class="popup_box">
+    <div class="popup_content">
+      Leider wird die Eierschaukel von diesem Endgerät nicht unterstützt.
+    </div>
+  </div>
+</div>
+
+
+<audio autoplay="" autostart="" loop="" id="sound">
+  <source src="sound.mp3" type="audio/mpeg">
+  <source src="sound.ogg" type="audio/ogg">
+  <source src="sound.wav" type="audio/wav">
+  <source src="sound.aiff" type="audio/x-aiff">
+  <object>
+    <param name="src" value="sound.mp3">
+    <param name="autostart" value="true">
+    <param name="autoplay" value="true">
+    <param name="controller" value="false">
+    <embed src="sound.mp3" controller="false" autoplay="true" autostart="true" type="audio/mpeg">
+  </object>
+</audio>
+
+
+<script type="text/javascript" src="jquery.min.js"></script>
+<script type="text/javascript" src="bowser.min.js"></script>
+<script type="text/javascript" src="prefixfree.min.js"></script>
+<script>
+  var SWINGDURATION = 5000;
+  var FRAMESPERDURATION = 150;
+  var MAXDEGREE = 70;
+  var CURRENT_STEP1 = 0;
+  var CURRENT_MAXDEGREE1 = 0;
+  var DEGREE_PUFFER1 = 0;
+  var EGG_CLASS1 = 'egg1-1a';
+  var EGG_CLASS_COUNT1 = 0;
+  var CURRENT_STEP2 = 0;
+  var CURRENT_MAXDEGREE2 = 0;
+  var DEGREE_PUFFER2 = 0;
+  var EGG_CLASS2 = 'egg2-1a';
+  var EGG_CLASS_COUNT2 = 0;
+  var TREE_EYES_CLASS = 'tree_eyes1';
+  var TREE_EYES_CLASS_COUNT = 0;
+
+  $( document ).ready(function() {
+
+    function getUrlParameter(name) {
+        name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
+        var regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
+        var results = regex.exec(location.search);
+        return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
+    }
+
+    var names = getUrlParameter('names');
+    if (names) {
+        var nameArray = names.split('|');
+        if (nameArray.length >= 2) {
+            $('#eggnames p').text(nameArray[0] + ' & ' + nameArray[1]);
+            $('#eggname1').val(nameArray[0]);
+            $('#eggname2').val(nameArray[1]);
+        } else if (nameArray.length === 1 && nameArray[0]) {
+            $('#eggnames p').text(nameArray[0]);
+            $('#eggname1').val(nameArray[0]);
+        }
+    }
+
+    if( (bowser.ipod && bowser.osversion<='6.1.6') || (bowser.android && bowser.osversion<='2.3.3') ){
+      $('#wrongdevice').fadeIn();
+      $('#sound').get(0).pause();
+    }
+    if( bowser.msie && bowser.version<=10 ){
+      $('#wrongbrowser').fadeIn();
+      $('#sound').get(0).pause();
+    }
+    if( bowser.mobile ){
+      MAXDEGREE = 65;
+    }
+
+    $('#nav_btn').click(function(){
+      if( $('#canvas').hasClass('fullscreen') ){
+        $('#nav_btn').removeClass('min').addClass('max');
+        $('#canvas').removeClass('fullscreen');
+        window.setTimeout(function(){$('#share').fadeIn();},200);
+      }
+      else{
+        $('#nav_btn').removeClass('max').addClass('min');
+        $('#canvas').addClass('fullscreen');
+        $('#share').fadeOut();
+      }
+    });
+
+    // Swing Animation --------------------------------------------------------
+    window.setInterval(function(){
+      if( DEGREE_PUFFER1>0 ){
+        CURRENT_MAXDEGREE1 = CURRENT_MAXDEGREE1+(DEGREE_PUFFER1*0.2);
+        DEGREE_PUFFER1 = DEGREE_PUFFER1*0.8;
+        if( CURRENT_MAXDEGREE1>MAXDEGREE )
+          CURRENT_MAXDEGREE1 = MAXDEGREE;
+      }
+      CURRENT_MAXDEGREE1 = CURRENT_MAXDEGREE1-0.08;
+      if( CURRENT_MAXDEGREE1<5 )
+        CURRENT_MAXDEGREE1 = 5
+      var degree1 = Math.sin(((2*Math.PI/FRAMESPERDURATION)*(CURRENT_STEP1+++35)))*CURRENT_MAXDEGREE1;
+      if( CURRENT_STEP1>100000 && degree1>0 && Math.round(degree1)==0 )
+        CURRENT_STEP1 = 0;
+
+      EGG_CLASS_COUNT1++
+      if( EGG_CLASS_COUNT1>3 ){
+        EGG_CLASS_COUNT1 = 0;
+        var last_class1 = EGG_CLASS1;
+        EGG_CLASS1 = 'egg1-'+(CURRENT_MAXDEGREE1>40?5:(
+                              CURRENT_MAXDEGREE1>30?4:(
+                              CURRENT_MAXDEGREE1>20?3:(
+                              CURRENT_MAXDEGREE1>10?2:1))))+(Math.random()<0.05?'b':'a');
+      }
+      $('#swing1').css({
+        '-moz-transform':'rotateX('+(-degree1)+'deg)',
+        '-webkit-transform':'rotateX('+(-degree1)+'deg)',
+        'transform':'rotateX('+(-degree1)+'deg)'
+      });
+      $('#swing1 .egg').css({
+        '-moz-transform':'rotateX('+degree1+'deg)',
+        '-webkit-transform':'rotateX('+degree1+'deg)',
+        'tansform':'rotateX('+degree1+'deg)'
+      })
+      if( last_class1 )
+        $('#swing1 .egg').removeClass(last_class1).addClass(EGG_CLASS1);
+
+      if( DEGREE_PUFFER2>0 ){
+        CURRENT_MAXDEGREE2 = CURRENT_MAXDEGREE2+(DEGREE_PUFFER2*0.2);
+        DEGREE_PUFFER2 = DEGREE_PUFFER2*0.8;
+        if( CURRENT_MAXDEGREE2>MAXDEGREE )
+          CURRENT_MAXDEGREE2 = MAXDEGREE;
+      }
+      CURRENT_MAXDEGREE2 = CURRENT_MAXDEGREE2-0.08;
+      if( CURRENT_MAXDEGREE2<4 )
+        CURRENT_MAXDEGREE2 = 4
+      var degree2 = Math.sin((2*Math.PI/FRAMESPERDURATION)*CURRENT_STEP2++)*CURRENT_MAXDEGREE2;
+      if( CURRENT_STEP2>100000 && degree2>0 && Math.round(degree2)==0 )
+        CURRENT_STEP2 = 0;
+
+      EGG_CLASS_COUNT2++
+      if( EGG_CLASS_COUNT2>30 ){
+        EGG_CLASS_COUNT2 = 0;
+        var last_class2 = EGG_CLASS2;
+        EGG_CLASS2 = 'egg2-'+(CURRENT_MAXDEGREE2>40?5:(
+                              CURRENT_MAXDEGREE2>30?4:(
+                              CURRENT_MAXDEGREE2>20?3:(
+                              CURRENT_MAXDEGREE2>10?2:1))))+(Math.random()<0.4?'b':'a');
+      }
+      $('#swing2').css({
+        '-moz-transform':'rotateX('+(-degree2)+'deg)',
+        '-webkit-transform':'rotateX('+(-degree2)+'deg)',
+        'transform':'rotateX('+(-degree2)+'deg)'
+      });
+      $('#swing2 .egg').css({
+        '-moz-transform':'rotateX('+degree2+'deg)',
+        '-webkit-transform':'rotateX('+degree2+'deg)',
+        'transform':'rotateX('+degree2+'deg)'
+      });
+      if( last_class2 )
+        $('#swing2 .egg').removeClass(last_class2).addClass(EGG_CLASS2);
+
+
+      TREE_EYES_CLASS_COUNT++
+      if( TREE_EYES_CLASS_COUNT>300 ){
+        TREE_EYES_CLASS_COUNT = 0;
+        var last_tree_eyes_class = TREE_EYES_CLASS;
+        TREE_EYES_CLASS = 'tree_eyes'+(Math.floor(Math.random()*4)+1);
+      }
+      if( last_tree_eyes_class )
+        $('#tree_eyes').removeClass(last_tree_eyes_class).addClass(TREE_EYES_CLASS);
+
+    }, SWINGDURATION/FRAMESPERDURATION);
+
+
+    $('div.swinghandle.swing1').bind('touchstart click', function(e){
+      e.preventDefault();
+      e.stopPropagation();
+      $('#hint').fadeOut();
+      DEGREE_PUFFER1 = DEGREE_PUFFER1+10;
+      if( MAXDEGREE<DEGREE_PUFFER1 )
+        DEGREE_PUFFER1 = MAXDEGREE;
+      return;
+    });
+    $('div.swinghandle.swing2').bind('touchstart click', function(e){
+      e.preventDefault();
+      e.stopPropagation();
+      $('#hint').fadeOut();
+      DEGREE_PUFFER2 = DEGREE_PUFFER2+10;
+      if( MAXDEGREE<DEGREE_PUFFER2 )
+        DEGREE_PUFFER2 = MAXDEGREE;
+      return;
+    });
+
+    //-------------------------------------------------------------------------
+    
+    // Nomination
+    $('#nomination_submit').click(function(){
+      window.open("index.html?names="+$('#eggname1').val()+'|'+$('#eggname2').val(),'_self');
+    });
+
+    // Imprint
+    $('#imprint_btn').click(function(e){
+      e.stopPropagation();
+      $('#imprint').fadeIn();
+    });
+
+    $('#nomination_btn').click(function(e){
+      e.stopPropagation();
+      $('#nomination').fadeIn();
+    });
+
+    // Sound
+    $('#sound_btn').click(function(e) {
+      e.preventDefault();
+      if ($('#sound').get(0).paused == false) {
+        $('#sound_btn').removeClass('sound_on').addClass('sound_off');
+        $('#sound').get(0).pause();
+      } else {
+        $('#sound_btn').removeClass('sound_off').addClass('sound_on');
+        $('#sound').get(0).play();
+      }
+    });
+
+    // Close Popup
+    $('div.popup_box').click(function(e){
+      e.stopPropagation();
+      e.preventDefault();
+      return false;
+    });
+    $('div.popup:not(#wrongbrowser,#wrongdevice),div.popup_close').click(function(){
+      $('.popup').fadeOut();
+    });
+
+    // Prevent iOS Browser-Bounce
+    document.ontouchmove = function(event){
+      event.preventDefault();
+    }
+
+    // Counter
+    var time = 0,
+        seconds = 0,
+        minutes = 0,
+        hours = 0,
+        days = 0;
+    window.setInterval( function(){
+      time++;
+      seconds++;
+      if(time % 60 === 0){
+        seconds = 0;
+        minutes++;
+        $('.counter_minutes').addClass('active');
+      }
+      if(time % 3600 === 0){
+        minutes = 0;
+        hours++;
+        $('.counter_hours').addClass('active');
+      }
+      if(time % 86400 === 0){
+        hours = 0;
+        days++;
+        $('.counter_days').addClass('active');
+      }
+      $('.counter_days').text((days<=9?'0':'')+days);
+      $('.counter_hours').text((hours<=9?'0':'')+hours);
+      $('.counter_minutes').text((minutes<=9?'0':'')+minutes);
+      $('.counter_seconds').addClass('active').text((seconds<=9?'0':'')+seconds);
+    },1000);
+  });
+</script>

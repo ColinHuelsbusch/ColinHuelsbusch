@@ -1,0 +1,42 @@
+https://nuumedia.de/
+  Cache-Control: no-cache
+  Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; script-src 'unsafe-inline' 'sha256-rKzpl3NoAXRCUkgBQUZj8VtrKf2ABgCTDKEpkfJIFhs='; img-src https://nuumedia.de/; font-src https://nuumedia.de/; worker-src https://nuumedia.de/; block-all-mixed-content; base-uri 'self'; manifest-src 'self';
+  Permissions-Policy: accelerometer=(),autoplay=(),camera=(),display-capture=(),encrypted-media=(),fullscreen=(),gamepad=(),geolocation=(),gyroscope=(),magnetometer=(),microphone=(),midi=(),payment=(),picture-in-picture=(),publickey-credentials-get=(),sync-xhr=(self),usb=(),screen-wake-lock=(),web-share=(),xr-spatial-tracking=()
+  Referrer-Policy: no-referrer
+  Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+  X-Content-Type-Options: nosniff
+
+https://nuumedia.de/favicon.ico
+  Cache-Control: max-age=31536000, immutable
+
+https://nuumedia.de/manifest.webmanifest
+  Content-Type: application/manifest+json; charset=utf-8
+  Cache-Control: max-age=31536000, immutable
+
+https://nuumedia.de/*.html
+  Content-Type: text/html; charset=utf-8
+  Cache-Control: max-age=31536000, immutable
+
+https://nuumedia.de/*.js
+  Content-Type: text/javascript; charset=utf-8
+  Cache-Control: max-age=31536000, immutable
+
+https://nuumedia.de/*.png
+  Content-Type: image/png
+  Cache-Control: max-age=31536000, immutable
+
+https://nuumedia.de/*.jpg
+  Content-Type: image/jpeg
+  Cache-Control: max-age=31536000, immutable
+
+https://nuumedia.de/*.webp
+  Content-Type: image/webp
+  Cache-Control: max-age=31536000, immutable
+
+https://nuumedia.de/*.woff
+  Content-Type: font/woff
+  Cache-Control: max-age=31536000, immutable
+
+https://nuumedia.de/*.woff2
+  Content-Type: font/woff2
+  Cache-Control: max-age=31536000, immutable
