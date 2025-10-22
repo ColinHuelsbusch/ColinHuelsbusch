@@ -729,24 +729,6 @@
   </div>
 </div>
 
-
-<div id="wrongbrowser" class="popup">
-  <div class="popup_box">
-    <div class="popup_content">
-      Du benutzt einen <strong>veralteten</strong> Browser. 
-      Bitte <a href="http://browsehappy.com/">aktualisiere Deinen Browser</a>, um die Eierschaukel nutzen zu können.
-    </div>
-  </div>
-</div>
-<div id="wrongdevice" class="popup">
-  <div class="popup_box">
-    <div class="popup_content">
-      Leider wird die Eierschaukel von diesem Endgerät nicht unterstützt.
-    </div>
-  </div>
-</div>
-
-
 <audio autoplay="" autostart="" loop="" id="sound">
   <source src="sound.mp3" type="audio/mpeg">
   <source src="sound.ogg" type="audio/ogg">
@@ -804,14 +786,6 @@
         }
     }
 
-    if( (bowser.ipod && bowser.osversion<='6.1.6') || (bowser.android && bowser.osversion<='2.3.3') ){
-      $('#wrongdevice').fadeIn();
-      $('#sound').get(0).pause();
-    }
-    if( bowser.msie && bowser.version<=10 ){
-      $('#wrongbrowser').fadeIn();
-      $('#sound').get(0).pause();
-    }
     if( bowser.mobile ){
       MAXDEGREE = 65;
     }
@@ -968,9 +942,6 @@
       e.stopPropagation();
       e.preventDefault();
       return false;
-    });
-    $('div.popup:not(#wrongbrowser,#wrongdevice),div.popup_close').click(function(){
-      $('.popup').fadeOut();
     });
 
     // Prevent iOS Browser-Bounce
