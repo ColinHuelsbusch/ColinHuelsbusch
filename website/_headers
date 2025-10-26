@@ -17,23 +17,23 @@ https://colinhuelsbusch.de/manifest.webmanifest
 
 https://colinhuelsbusch.de/*.html
   Content-Type: text/html; charset=utf-8
-  Cache-Control: max-age=31536000, immutable
+  Cache-Control: max-age=604800, immutable
 
 https://colinhuelsbusch.de/*.js
   Content-Type: text/javascript; charset=utf-8
-  Cache-Control: max-age=31536000, immutable
+  Cache-Control: max-age=604800, immutable
 
 https://colinhuelsbusch.de/*.png
   Content-Type: image/png
-  Cache-Control: max-age=31536000, immutable
+  Cache-Control: max-age=604800, immutable
 
 https://colinhuelsbusch.de/*.jpg
   Content-Type: image/jpeg
-  Cache-Control: max-age=31536000, immutable
+  Cache-Control: max-age=604800, immutable
 
 https://colinhuelsbusch.de/*.webp
   Content-Type: image/webp
-  Cache-Control: max-age=31536000, immutable
+  Cache-Control: max-age=604800, immutable
 
 https://colinhuelsbusch.de/*.woff
   Content-Type: font/woff
