@@ -943,6 +943,9 @@
       e.preventDefault();
       return false;
     });
+    $('div.popup_close').click(function(){
+      $('.popup').fadeOut();
+    });
 
     // Prevent iOS Browser-Bounce
     document.ontouchmove = function(event){
