@@ -5,6 +5,8 @@ https://colinhuelsbusch.de/
   Referrer-Policy: no-referrer
   Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
   X-Content-Type-Options: nosniff
+  X-Frame-Options: sameorigin
+  Access-Control-Allow-Origin: null
 
 https://colinhuelsbusch.de/favicon.ico
   Cache-Control: max-age=31536000, immutable
