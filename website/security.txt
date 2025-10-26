@@ -1,3 +1,4 @@
 Contact: mailto:mail@colinhuelsbusch.de
 Expires: 2056-09-30T22:00:00.000Z
+Encryption: https://colinhuelsbusch.de/pgp-key.txt
 Preferred-Languages: en, de
