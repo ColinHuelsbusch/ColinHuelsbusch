@@ -1,5 +1,5 @@
 https://colinhuelsbusch.de/*
-  Content-Security-Policy: default-src 'none'; connect-src 'self'; style-src 'unsafe-inline'; script-src 'unsafe-inline' 'sha256-M2Vjz9Yxe/8JhZ1u4B9bhhfzA2hbX6ynO9oeSJbutW4='; img-src https://colinhuelsbusch.de/; font-src https://colinhuelsbusch.de/; frame-src https://www.youtube-nocookie.com https://www.linkedin.com; base-uri 'self'; manifest-src 'self'; frame-ancestors 'none';
+  Content-Security-Policy: default-src 'none'; connect-src 'self'; style-src 'unsafe-inline'; script-src 'unsafe-inline' 'sha256-XqNPkVE7j9SkW/amMxIQOZ753FdQmJ0UW7R9quuwS44='; img-src https://colinhuelsbusch.de/; font-src https://colinhuelsbusch.de/; frame-src https://www.youtube-nocookie.com https://www.linkedin.com; base-uri 'self'; manifest-src 'self'; frame-ancestors 'none';
   Permissions-Policy: accelerometer=(),autoplay=(),camera=(),display-capture=(),encrypted-media=(),fullscreen=(),gamepad=(),geolocation=(),gyroscope=(),magnetometer=(),microphone=(),midi=(),payment=(),picture-in-picture=(),publickey-credentials-get=(),sync-xhr=(self),usb=(),screen-wake-lock=(),web-share=(),xr-spatial-tracking=()
   Referrer-Policy: no-referrer
   Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
