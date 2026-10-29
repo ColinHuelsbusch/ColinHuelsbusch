@@ -1,117 +1,295 @@
 <!doctype html>
-<html lang="en" dir="ltr">
+<html lang="de" data-lang="de" dir="ltr">
 	<head>
 		<meta charset="utf-8">
 		<title>Colin Hülsbusch</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="Colin Hülsbusch, Head of AI &amp; Cloud Security bei mispa Technologies. KI, Cyber Security und Cloud.">
+		<meta name="theme-color" content="#403d44">
+		<link rel="canonical" href="https://colinhuelsbusch.de">
 		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 		<link rel="apple-touch-icon" href="apple-touch-icon.png">
-		<link rel="apple-touch-icon" sizes="76x76" href="apple-touch-icon-76x76.png">
-		<link rel="apple-touch-icon" sizes="120x120" href="apple-touch-icon-120x120.png">
-		<link rel="apple-touch-icon" sizes="152x152" href="apple-touch-icon-152x152.png">
 		<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon-180x180.png">
-		<meta name="description" content="Online business card of Colin Hülsbusch">
-		<meta name="theme-color" content="#403d44">
 		<link rel="manifest" href="manifest.webmanifest">
-		<link rel="canonical" href="https://colinhuelsbusch.de">
-		<style type="text/css">
-			body {
-				margin: 0;
-				font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
-				font-weight: normal;
-				text-align: center;
-				-webkit-text-size-adjust: 100%;
+		<meta property="og:type" content="profile">
+		<meta property="og:title" content="Colin Hülsbusch">
+		<meta property="og:description" content="Head of AI &amp; Cloud Security bei mispa Technologies. KI, Cyber Security und Cloud.">
+		<meta property="og:url" content="https://colinhuelsbusch.de">
+		<meta property="og:image" content="https://colinhuelsbusch.de/picture.jpg">
+		<script type="application/ld+json">
+		{
+			"@context": "https://schema.org",
+			"@type": "Person",
+			"name": "Colin Hülsbusch",
+			"jobTitle": "Head of AI & Cloud Security",
+			"worksFor": {"@type": "Organization", "name": "mispa Technologies GmbH", "url": "https://mispa.com"},
+			"url": "https://colinhuelsbusch.de",
+			"image": "https://colinhuelsbusch.de/picture.jpg",
+			"sameAs": [
+				"https://www.linkedin.com/in/colinhuelsbusch",
+				"https://github.com/ColinHuelsbusch"
+			],
+			"knowsAbout": ["Artificial Intelligence", "AI Security", "Cloud Security", "Cloud Architecture", "Information Security", "ISO 27001", "ISO 42001", "EU AI Act", "SAP BTP", "SAP Business AI Platform", "Microsoft Azure", "AWS", "Google Cloud Platform", "Scaleway"],
+			"knowsLanguage": ["de", "en"]
+		}
+		</script>
+		<style>
+			/* Farben aus dem bisherigen Design: Kopfband #97a5b7, Schrift #111, Theme #403d44 */
+			:root {
+				--band: #97a5b7;
+				--band-ink: #111;
+				--ink: #111;
+				--muted: #50565e;
+				--line: #d5dbe3;
+				--bg: #fff;
+				--soft: #f2f4f7;
+				--chip: #e6eaf0;
+				--accent: #403d44;
+				--new: #2f6b4f;
+				--radius: 7px;
+				--wrap: 1100px;
+				--font: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+				color-scheme: light;
 			}
-			a {
-				color: #111;
-				text-decoration: none;
-			}
-			.header {
-				height: 38.2vmin;
-				width: 100%;
-				background: #97a5b7;
-				float: left;
-				overflow: hidden;
-			}
-			.header-content {
-				height: 38.2vmin;
-				width: 100%;
-				max-width: 100vmin;
-				margin: 0 auto;
-				text-align: left;
-			}
-			.content {
-				height: 61.8vmin;
-				width: 100%;
-				max-width: 100vmin;
-				margin: 0 auto;
-				text-align: left;
-			}
-			.picture {
-				float: left;
-				width: 30vmin;
-				height: 30vmin;
-				margin: 4vmin 4vmin;
-				margin-right: 8vmin;
-				background: transparent no-repeat center center;
-				background-image: url("picture.jpg");
-				background-size: contain;
-				border-radius: 50%;
-			}
-			@supports (background-image: image-set) {
-				.picture {
-					background-image: image-set(
-						"picture.webp" type("image/webp"),
-						"picture.jpg" type("image/jpeg")
-					);
+			@media (prefers-color-scheme: dark) {
+				:root:not([data-theme="light"]) {
+					--band: #403d44;
+					--band-ink: #f2f2f4;
+					--ink: #ececef;
+					--muted: #b4b9c1;
+					--line: #4a4750;
+					--bg: #2a282d;
+					--soft: #333138;
+					--chip: #3d3a43;
+					--accent: #97a5b7;
+					--new: #8fd1ae;
+					color-scheme: dark;
 				}
 			}
-			h1 {
-				color: #111;
+			:root[data-theme="dark"] {
+				--band: #403d44;
+				--band-ink: #f2f2f4;
+				--ink: #ececef;
+				--muted: #b4b9c1;
+				--line: #4a4750;
+				--bg: #2a282d;
+				--soft: #333138;
+				--chip: #3d3a43;
+				--accent: #97a5b7;
+				--new: #8fd1ae;
+				color-scheme: dark;
+			}
+			* { box-sizing: border-box; }
+			html { scroll-behavior: smooth; scroll-padding-top: 4rem; }
+			@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+			body {
+				overflow-x: clip;
 				margin: 0;
-				padding-top: 12vmin;
-				font-size: 6vmin;
-				font-weight: normal;
-				text-align: left;
+				font-family: var(--font);
+				font-size: 1.125rem;
+				line-height: 1.55;
+				color: var(--ink);
+				background: var(--bg);
+				-webkit-text-size-adjust: 100%;
 			}
-			h2 {
-				color: #111;
-				font-size: 3.2vmin;
-				font-weight: normal;
-				margin: 0;
-				left: 0.2vmin;
-				position: relative;
-			}
-			.link {
-				color: #111;
-				font-size: 2.2vmin;
-				font-weight: bold;
-				margin-top: 1vmin;
-				margin-right: 1.1vmin;
-				margin-left: 0.2vmin;
-				display: inline-block;
-				border: 1px solid #111;
-				padding: 1vmin 2vmin;
-				border-radius: 7px;
-			}
-			.badge {
-				width: 50%;
-				height: 15%;
-				margin-top: 7%;
-				float: left;
+			a { color: inherit; }
+			img { display: block; max-width: 100%; }
+			.wrap { max-width: var(--wrap); margin: 0 auto; padding: 0 16px; }
+			html[data-lang="de"] .en, html[data-lang="en"] .de { display: none !important; }
+			.skip { position: absolute; left: -999px; top: 0; background: var(--bg); padding: .5rem 1rem; z-index: 10; }
+			.skip:focus { left: 16px; }
+			:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+			/* Kopfband */
+			.header { background: var(--band); color: var(--band-ink); }
+			.header-content {
 				position: relative;
 				display: flex;
 				align-items: center;
+				gap: clamp(1.25rem, 5vw, 4rem);
+				min-height: 38.2vmin;
+				padding-top: clamp(1.5rem, 4vmin, 3rem);
+				padding-bottom: clamp(1.5rem, 4vmin, 3rem);
 			}
+			picture { display: contents; }
+			.picture {
+				flex: none;
+				width: clamp(9rem, 28vmin, 15rem);
+				aspect-ratio: 1;
+				border-radius: 50%;
+				height: auto;
+				object-fit: cover;
+				background: #fff;
+			}
+			h1 {
+				margin: 0;
+				font-size: clamp(2.2rem, 6vmin, 3.6rem);
+				font-weight: normal;
+				line-height: 1.1;
+			}
+			.role {
+				margin: .35rem 0 0 .1rem;
+				font-size: clamp(1.15rem, 3vmin, 1.6rem);
+				font-weight: normal;
+			}
+			.tagline { margin: .15rem 0 0 .1rem; font-size: 1rem; letter-spacing: .04em; opacity: .85; }
+			.links { margin-top: .9rem; display: flex; flex-wrap: wrap; gap: .5rem .6rem; }
+			.link {
+				display: inline-block;
+				color: var(--band-ink);
+				font-size: 1rem;
+				font-weight: bold;
+				text-decoration: none;
+				border: 1px solid currentColor;
+				border-radius: var(--radius);
+				padding: .45em 1em;
+				transition: background-color .15s, color .15s;
+			}
+			.link:hover { background: var(--band-ink); color: var(--band); }
+			.lang {
+				position: absolute;
+				top: 12px;
+				right: 16px;
+				display: flex;
+				gap: .25rem;
+			}
+			.lang button, .theme-btn {
+				font: inherit;
+				font-size: .85rem;
+				font-weight: bold;
+				color: var(--band-ink);
+				background: transparent;
+				border: 1px solid transparent;
+				border-radius: var(--radius);
+				padding: .15em .55em;
+				cursor: pointer;
+			}
+			.lang button[aria-pressed="true"] { border-color: currentColor; }
+
+			/* Navigation */
+			.nav {
+				position: sticky;
+				top: 0;
+				z-index: 5;
+				background: var(--bg);
+				border-bottom: 1px solid var(--line);
+				overflow: hidden;
+			}
+			.nav ul {
+				list-style: none;
+				margin: 0 auto;
+				padding: 0 16px;
+				max-width: var(--wrap);
+				display: flex;
+				gap: 1.4rem;
+				overflow-x: auto;
+				overflow-y: hidden;
+				overscroll-behavior-x: contain;
+				scrollbar-width: none;
+				/* Scrollleiste unter den sichtbaren Bereich schieben, falls ein Browser sie trotzdem zeigt */
+				padding-bottom: 20px;
+				margin-bottom: -20px;
+			}
+			.nav ul::-webkit-scrollbar { display: none; }
+			.nav a {
+				display: block;
+				padding: .8rem 0;
+				white-space: nowrap;
+				text-decoration: none;
+				font-size: 1rem;
+				color: var(--muted);
+				border-bottom: 2px solid transparent;
+			}
+			.nav a.active { color: var(--ink); border-bottom-color: var(--ink); }
+			@media (hover: hover) { .nav a:hover { color: var(--ink); } }
+
+			/* Abschnitte im Stil des Lebenslaufs: Überschrift mit Linie */
+			section { padding: 2.75rem 0 .5rem; }
+			h2 {
+				margin: 0 0 1.25rem;
+				font-size: 1.6rem;
+				font-weight: normal;
+				border-bottom: 1px solid var(--ink);
+				padding-bottom: .2rem;
+			}
+			h3 { margin: 0; font-size: 1.15rem; }
+			p { margin: 0 0 .9rem; max-width: 72ch; }
+			.lead { font-size: 1.25rem; }
+			.muted { color: var(--muted); }
+
+			/* Kennzahlen */
+			.facts {
+				display: grid;
+				grid-template-columns: repeat(2, 1fr);
+				gap: 1rem;
+				margin: 1.75rem 0 .5rem;
+			}
+			@media (min-width: 760px) { .facts { grid-template-columns: repeat(4, 1fr); } }
+			.fact { border-left: 3px solid var(--band); padding: .1rem 0 .1rem .9rem; }
+			.fact b { display: block; font-size: 2rem; font-weight: normal; line-height: 1.1; }
+			.fact span { color: var(--muted); font-size: 1rem; }
+
+			/* Schwerpunkte */
+			.cards { display: grid; grid-template-columns: 1fr; gap: 1rem; }
+			@media (min-width: 640px) { .cards { grid-template-columns: repeat(2, 1fr); } }
+			.card { background: var(--soft); border-radius: var(--radius); padding: 1.1rem 1.2rem; }
+			.card h3 { margin-bottom: .45rem; }
+			.card p { font-size: 1.02rem; margin: 0; }
+
+			/* Werdegang */
+			.timeline { list-style: none; margin: 0; padding: 0; }
+			.job {
+				display: grid;
+				grid-template-columns: 9rem 1fr;
+				gap: .25rem 1.5rem;
+				padding: 1.1rem 0;
+				border-bottom: 1px solid var(--line);
+			}
+			.job:last-child { border-bottom: 0; }
+			.job .when { color: var(--muted); font-size: 1rem; padding-top: .15rem; }
+			.job h3 { font-size: 1.2rem; }
+			.job .org { margin: .05rem 0 .5rem; color: var(--muted); }
+			.job p { font-size: 1.02rem; margin-bottom: .5rem; }
+			.sub { margin-top: .9rem; }
+			.sub h4 { margin: 0 0 .25rem; font-size: 1.05rem; }
+			.sub h4 .yr { font-weight: normal; color: var(--muted); margin-left: .3rem; }
+
+			/* Zertifizierungen, angelehnt an die bisherige Badge-Liste */
+			.cert-group { margin: 0 0 1.75rem; }
+			.cert-group > h3 {
+				font-size: .9rem;
+				font-weight: bold;
+				letter-spacing: .08em;
+				text-transform: uppercase;
+				color: var(--muted);
+				margin-bottom: .6rem;
+			}
+			.badges {
+				display: grid;
+				grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+				gap: .4rem 1rem;
+				list-style: none;
+				margin: 0;
+				padding: 0;
+			}
+			.badge a, .badge .nolink {
+				display: flex;
+				align-items: center;
+				gap: .9rem;
+				padding: .4rem;
+				border-radius: var(--radius);
+				text-decoration: none;
+				min-height: 4.6rem;
+			}
+			.badge a:hover { background: var(--soft); }
+			/* Alle Badges liegen nebeneinander in einem Sprite mit 32 Kacheln zu je 128 px */
 			.badge .img {
-				height: 10vmin;
-				width: 10vmin;
-				margin-left: 1vmin;
-				margin-right: 2vmin;
-				background-image: url("certifications.png");
-				background-size: auto 100%;
+				width: 64px;
+				height: 64px;
+				flex: none;
+				background: url("certifications.png") 0 0 / 3200% 100% no-repeat;
 			}
-			@supports (background-image: image-set) {
+			@supports (background-image: image-set("a.webp" type("image/webp"))) {
 				.badge .img {
 					background-image: image-set(
 						"certifications.webp" type("image/webp"),
@@ -119,311 +297,859 @@
 					);
 				}
 			}
-			.badge a {
-				height: 10vw;
+			.badge .b0 { background-position: 0 0; }
+			.badge .b1 { background-position: 3.226% 0; }
+			.badge .b2 { background-position: 6.452% 0; }
+			.badge .b3 { background-position: 9.677% 0; }
+			.badge .b4 { background-position: 12.9% 0; }
+			.badge .b5 { background-position: 16.13% 0; }
+			.badge .b6 { background-position: 19.35% 0; }
+			.badge .b7 { background-position: 22.58% 0; }
+			.badge .b8 { background-position: 25.81% 0; }
+			.badge .b9 { background-position: 29.03% 0; }
+			.badge .b10 { background-position: 32.26% 0; }
+			.badge .b11 { background-position: 35.48% 0; }
+			.badge .b12 { background-position: 38.71% 0; }
+			.badge .b13 { background-position: 41.94% 0; }
+			.badge .b14 { background-position: 45.16% 0; }
+			.badge .b15 { background-position: 48.39% 0; }
+			.badge .b16 { background-position: 51.61% 0; }
+			.badge .b17 { background-position: 54.84% 0; }
+			.badge .b18 { background-position: 58.06% 0; }
+			.badge .b19 { background-position: 61.29% 0; }
+			.badge .b20 { background-position: 64.52% 0; }
+			.badge .b21 { background-position: 67.74% 0; }
+			.badge .b22 { background-position: 70.97% 0; }
+			.badge .b23 { background-position: 74.19% 0; }
+			.badge .b24 { background-position: 77.42% 0; }
+			.badge .b25 { background-position: 80.65% 0; }
+			.badge .b26 { background-position: 83.87% 0; }
+			.badge .b27 { background-position: 87.1% 0; }
+			.badge .b28 { background-position: 90.32% 0; }
+			.badge .b29 { background-position: 93.55% 0; }
+			.badge .b30 { background-position: 96.77% 0; }
+			.badge .b31 { background-position: 100% 0; }
+			@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .badge .img { background-color: #f4f5f7; border-radius: 10px; box-shadow: 0 0 0 3px #f4f5f7; } }
+			:root[data-theme="dark"] .badge .img { background-color: #f4f5f7; border-radius: 10px; box-shadow: 0 0 0 3px #f4f5f7; }
+			.badge .t { font-size: 1rem; line-height: 1.25; }
+			.badge .y { display: block; font-size: .85rem; color: var(--muted); margin-top: .15rem; }
+			.new {
+				display: inline-block;
+				font-size: .7rem;
+				font-weight: bold;
+				letter-spacing: .05em;
+				text-transform: uppercase;
+				color: var(--new);
+				border: 1px solid currentColor;
+				border-radius: 4px;
+				padding: 0 .3em;
+				margin-left: .3rem;
+				vertical-align: 1px;
+			}
+			.expired .img { filter: grayscale(1); opacity: .6; }
+			.more { margin-top: .25rem; }
+			.more a { font-weight: bold; }
+
+			/* Mitgliedschaften */
+			.rows { list-style: none; margin: 0; padding: 0; }
+			.rows li {
+				display: grid;
+				grid-template-columns: 1fr auto;
+				gap: 1rem;
+				padding: .55rem 0;
+				border-bottom: 1px solid var(--line);
+			}
+			.rows li:last-child { border-bottom: 0; }
+			.rows .y { color: var(--muted); white-space: nowrap; }
+
+			/* Technologien */
+			.skills { display: grid; grid-template-columns: 1fr; gap: 1.25rem 2rem; }
+			@media (min-width: 640px) { .skills { grid-template-columns: repeat(2, 1fr); } }
+			.tags { display: flex; flex-wrap: wrap; gap: .35rem; margin-top: .5rem; list-style: none; padding: 0; }
+			.tags li { background: var(--chip); border-radius: 4px; padding: .1rem .5rem; font-size: .95rem; }
+
+			/* Beiträge und Medien */
+			.media { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 1.25rem; align-items: stretch; }
+			.post { background: var(--soft); border-radius: var(--radius); overflow: hidden; display: flex; flex-direction: column; }
+			.post .frame { position: relative; aspect-ratio: 16 / 9; background: #000; }
+			/* Alle Vorschaubilder liegen untereinander in einem Sprite mit 6 Kacheln zu je 800 x 450 px */
+			.thumb {
+				position: absolute;
+				inset: 0;
+				background: url("thumbnails.jpg") 0 0 / 100% 600% no-repeat;
+			}
+			@supports (background-image: image-set("a.webp" type("image/webp"))) {
+				.thumb {
+					background-image: image-set(
+						"thumbnails.webp" type("image/webp"),
+						"thumbnails.jpg" type("image/jpeg")
+					);
+				}
+			}
+			.t0 { background-position: 0 0; }
+			.t1 { background-position: 0 20%; }
+			.t2 { background-position: 0 40%; }
+			.t3 { background-position: 0 60%; }
+			.t4 { background-position: 0 80%; }
+			.t5 { background-position: 0 100%; }
+			.post .frame iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+			.post .frame.li { aspect-ratio: auto; height: 640px; background: #fff; }
+			.post .frame[hidden] { display: none; }
+			.post.feature { grid-column: 1 / -1; flex-direction: row; }
+			.post.feature .frame { flex: 0 0 58%; min-width: 0; }
+			.post.feature .body { min-width: 0; }
+			@media (max-width: 759px) { .post.feature { flex-direction: column; } .post.feature .frame { flex: none; } }
+			.post.feature .body { padding: 1.2rem 1.4rem; }
+			.media-head { font-size: 1.15rem; margin: 1.75rem 0 .75rem; }
+			#beitraege .wrap > .media-head:first-of-type { margin-top: 0; }
+			.media + .media-head { margin-top: 2.25rem; }
+			.play {
+				position: absolute;
+				inset: 0;
 				display: flex;
-				align-items: center;
-				font-size: 2vmin;
+				flex-direction: row;
+				align-items: flex-end;
+				justify-content: flex-start;
+				gap: .5rem;
+				width: 100%;
+				border: 0;
+				background: linear-gradient(to top, rgba(17, 17, 17, .45), rgba(17, 17, 17, 0) 45%);
+				color: #fff;
+				font: inherit;
+				font-size: .95rem;
+				font-weight: bold;
+				cursor: pointer;
+				text-align: left;
+				padding: .8rem 1rem;
 			}
-			.badge1 {
-				background-position:-0.1vmin 0;
+			.play:hover { background: linear-gradient(to top, rgba(17, 17, 17, .6), rgba(17, 17, 17, .05) 60%); }
+			.play > span { padding-bottom: .3rem; text-shadow: 0 1px 2px rgba(0, 0, 0, .6); }
+			.play svg { width: 48px; height: 34px; flex: none; }
+			.post .body { padding: .9rem 1.1rem 1.1rem; display: flex; flex-direction: column; gap: .35rem; flex: 1; }
+			.post .src { font-size: .85rem; color: var(--muted); letter-spacing: .03em; }
+			.post h3 { font-size: 1.08rem; line-height: 1.3; }
+			.post p { font-size: 1rem; margin: 0; }
+			.post .actions { margin-top: auto; padding-top: .5rem; display: flex; flex-wrap: wrap; gap: .5rem 1rem; font-size: 1rem; }
+			.post .actions a, .post .actions button {
+				font: inherit;
+				font-weight: bold;
+				color: var(--ink);
+				background: none;
+				border: 0;
+				padding: 0;
+				cursor: pointer;
+				text-decoration: underline;
+				text-underline-offset: 3px;
 			}
-			.badge23 {
-				background-position:262.6vmin 0;
+			.hint { font-size: .9rem; color: var(--muted); margin-top: 1rem; }
+
+			/* Kontakt */
+			.contact .link { color: var(--ink); }
+			.contact .link:hover { background: var(--ink); color: var(--bg); }
+			.contact .links { margin-top: .5rem; }
+			.project { background: var(--soft); border-left: 3px solid var(--band); border-radius: var(--radius); padding: 1.25rem 1.4rem; }
+			.project .links { margin-top: 1rem; }
+			.project p { margin: 0; }
+			.services { display: grid; grid-template-columns: 1fr; gap: 1rem; margin: 1.25rem 0 1.25rem; align-items: stretch; }
+			@media (min-width: 800px) { .services { grid-template-columns: repeat(3, 1fr); } }
+			.services h3 { margin-bottom: .2rem; font-size: 1.2rem; }
+			.services h4 { margin: .9rem 0 .2rem; font-size: 1.02rem; }
+			.services p { font-size: .98rem; margin: 0; }
+
+			footer {
+				margin-top: 3rem;
+				border-top: 1px solid var(--line);
+				padding: 1.25rem 0 2rem;
+				font-size: .95rem;
+				color: var(--muted);
 			}
-			.badge2 {
-				background-position:252.6vmin 0;
+			footer .wrap { display: flex; flex-wrap: wrap; gap: .5rem 1.25rem; align-items: center; }
+			footer button {
+				font: inherit;
+				color: inherit;
+				background: none;
+				border: 0;
+				padding: 0;
+				cursor: pointer;
+				text-decoration: underline;
+				text-underline-offset: 3px;
 			}
-			.badge3 {
-				background-position:243vmin 0;
+			footer .theme-btn { display: inline-flex; padding: .35em; color: var(--muted); text-decoration: none; border: 1px solid var(--line); border-radius: var(--radius); margin-left: auto; }
+
+			dialog {
+				max-width: min(42rem, calc(100vw - 32px));
+				border: 1px solid var(--line);
+				border-radius: var(--radius);
+				background: var(--bg);
+				color: var(--ink);
+				padding: 1.5rem 1.5rem 1rem;
 			}
-			.badge4 {
-				background-position:232.8vmin 0;
+			dialog::backdrop { background: rgba(17, 17, 17, .5); }
+			dialog { max-height: calc(100dvh - 32px); overflow: auto; }
+			dialog h3 { font-size: 1.02rem; margin: 1.1rem 0 .3rem; }
+			dialog h2:focus { outline: none; }
+			dialog h2 { font-size: 1.35rem; }
+			dialog p { font-size: 1rem; }
+			dialog .dialog-actions { text-align: right; }
+			dialog .dialog-actions button {
+				font: inherit;
+				font-weight: bold;
+				color: var(--ink);
+				background: none;
+				border: 1px solid var(--ink);
+				border-radius: var(--radius);
+				padding: .3em 1em;
+				cursor: pointer;
 			}
-			.badge5 {
-				background-position:222.8vmin 0;
-			}
-			.badge6 {
-				background-position:212.8vmin 0;
-			}
-			.badge7 {
-				background-position:202.8vmin 0;
-			}
-			.badge8 {
-				background-position:192.8vmin 0;
-			}
-			.badge9 {
-				background-position:182.8vmin 0;
-			}
-			.badge10 {
-				background-position:172.8vmin 0;
-			}
-			.badge11 {
-				background-position:162.8vmin 0;
-			}
-			.badge12 {
-				background-position:152.8vmin 0;
-			}
-			.badge13 {
-				background-position:142.8vmin 0;
-			}
-			.badge14 {
-				background-position:133vmin 0;
-			}
-			.badge15 {
-				background-position:122.8vmin 0;
-			}
-			.badge16 {
-				background-position:113.4vmin 0;
-			}
-			.badge17 {
-				background-position:102.8vmin 0;
-			}
-			.badge18 {
-				background-position:92.8vmin 0;
-			}
-			.badge19 {
-				background-position:82.4vmin 0;
-			}
-			.badge20 {
-				background-position:71.8vmin 0;
-			}
-			.badge21 {
-				background-position:61.8vmin 0;
-			}
-			.badge22 {
-				background-position:51.4vmin 0;
-			}
-			.badge23 {
-				background-position:41.4vmin 0;
-			}
-			.badge24 {
-				background-position:30.8vmin 0;
-			}
-			.badge25 {
-				background-position:20.8vmin 0;
-			}
-			.badge26 {
-				background-position:10.4vmin 0;
-			}
-			.badge27 {
-				background-position:263vmin 0;
-			}
-			@media screen and (min-width: 600px) {
-				h2 {
-					font-size: 3vmin;
-				}
-				.link {
-					font-size: 2vmin;
-				}
-				.badge {
-					margin-top: 3%;
-					width: 33.3%;
-				}
-				.badge a {
-					font-size: 1.7vmin;
-				}
-			}
-			@media screen and (min-width: 1200px) {
-				.content {
-					max-width: 130vmin;
-				}
-				h2 {
-					font-size: 3vmin;
-				}
-				.link {
-					font-size: 2vmin;
-				}
-				.badge {
-					margin-top: 3%;
-					width: 25%;
-				}
-				.badge a {
-					font-size: 1.7vmin;
-				}
+
+			@media (max-width: 640px) {
+				body { font-size: 1.0625rem; }
+				.header-content { flex-direction: column; text-align: center; padding-top: 3rem; }
+				.header .links { justify-content: center; }
+				.job { grid-template-columns: 1fr; }
+				.job .when { padding-top: 0; }
+				.badges { grid-template-columns: 1fr; }
+				.media { grid-template-columns: 1fr; }
+				.post.feature { flex-direction: column; }
+				.post.feature .frame { flex: none; }
+				.rows li { grid-template-columns: 1fr; gap: 0; }
+				footer .wrap { flex-wrap: nowrap; gap: .8rem; font-size: clamp(.72rem, 3.5vw, .95rem); white-space: nowrap; }
+				footer { padding-top: 1rem; }
 			}
 		</style>
 	</head>
 	<body>
-		<div class="header">
-			<div class="header-content">
-				<div class="picture"></div>
-				<h1>Colin Hülsbusch</h1>
+		<a class="skip" href="#main"><span class="de">Zum Inhalt springen</span><span class="en">Skip to content</span></a>
+
+		<header class="header">
+			<div class="wrap header-content">
+				<div class="lang" role="group" aria-label="Sprache / Language">
+					<button type="button" data-set-lang="de" aria-pressed="true" lang="de">DE</button>
+					<button type="button" data-set-lang="en" aria-pressed="false" lang="en">EN</button>
+				</div>
+				<picture><source srcset="picture.webp" type="image/webp"><img class="picture" src="picture.jpg" width="626" height="626" alt="Porträt von Colin Hülsbusch"></picture>
 				<div>
-					<a class="link" href="https://linkedin.com/in/ColinHuelsbusch" target="_blank">LinkedIn</a>
-					<a class="link" href="https://github.com/ColinHuelsbusch" target="_blank">GitHub</a>
-					<a class="link" href="business-card.vcf" target="_blank">Business Card</a>
+					<h1>Colin Hülsbusch</h1>
+					<p class="role">
+						<span class="de">Head of AI &amp; Cloud Security bei mispa Technologies</span>
+						<span class="en">Head of AI &amp; Cloud Security at mispa Technologies</span>
+					</p>
+					<p class="tagline"><span class="de">KI · Cyber Security · Cloud</span><span class="en">AI · Cyber Security · Cloud</span></p>
+					<div class="links">
+						<a class="link" href="https://www.linkedin.com/in/colinhuelsbusch" target="_blank" rel="noopener">LinkedIn</a>
+						<a class="link" href="https://github.com/ColinHuelsbusch" target="_blank" rel="noopener">GitHub</a>
+						<a class="link" href="business-card.vcf"><span class="de">Visitenkarte</span><span class="en">Business Card</span></a>
+					</div>
 				</div>
 			</div>
-		</div>
-		<div class="content">
-			<div class="badge">
-				<a href="https://www.credly.com/badges/efc7f2f8-3b7e-4841-8d8d-2a2f961986fb" target="_blank">
-					<div class="img badge1"></div>
-					<span>Certified Information<br>Systems Security<br>Professional (CISSP)</span>
-				</a>
+		</header>
+
+		<nav class="nav" aria-label="Seitennavigation">
+			<ul>
+				<li><a href="#profil"><span class="de">Profil</span><span class="en">About</span></a></li>
+				<li><a href="#schwerpunkte"><span class="de">Schwerpunkte</span><span class="en">Focus</span></a></li>
+				<li><a href="#werdegang"><span class="de">Werdegang</span><span class="en">Experience</span></a></li>
+				<li><a href="#zertifizierungen"><span class="de">Zertifizierungen</span><span class="en">Certifications</span></a></li>
+				<li><a href="#beitraege"><span class="de">Beiträge</span><span class="en">Media</span></a></li>
+				<li><a href="#engagement"><span class="de">Engagement</span><span class="en">Community</span></a></li>
+				<li><a href="#projekte"><span class="de">Projekte</span><span class="en">Projects</span></a></li>
+				<li><a href="#kontakt"><span class="de">Kontakt</span><span class="en">Contact</span></a></li>
+			</ul>
+		</nav>
+
+		<main id="main">
+			<section id="profil">
+				<div class="wrap">
+					<h2><span class="de">Profil</span><span class="en">About</span></h2>
+					<div class="de">
+						<p class="lead">Ich bin IT-Führungskraft mit über 15 Jahren Erfahrung im deutschen Mittelstand. Mein Schwerpunkt liegt dort, wo künstliche Intelligenz, Cloud und Informationssicherheit zusammenkommen.</p>
+						<p>Ich habe interdisziplinäre Teams mit bis zu 25 Personen geführt und sichere Cloud-Plattformen von der ersten Idee bis zum Betrieb aufgebaut. Dabei verbinde ich KI- und Sicherheitsstrategien mit den Prozessen, die ein Unternehmen jeden Tag tragen.</p>
+						<p>Seit September 2026 leite ich bei mispa Technologies den Bereich AI &amp; Cloud Security. Wir helfen Unternehmen, KI und Cloud sicher und regelkonform zu nutzen.</p>
+					</div>
+					<div class="en">
+						<p class="lead">I am an IT leader with more than 15 years of experience in German mid-sized companies. My focus is the area where artificial intelligence, cloud and information security meet.</p>
+						<p>I led interdisciplinary teams of up to 25 people. I designed and built secure cloud platforms from the first concept to daily operation. I connect AI and security strategies with the core processes of a company.</p>
+						<p>In September 2026, I started at mispa Technologies as Head of AI &amp; Cloud Security. My unit helps companies to use AI and cloud services safely and in compliance with the rules.</p>
+					</div>
+					<div class="facts">
+						<div class="fact"><b>15+</b><span class="de">Jahre in der IT</span><span class="en">years in IT</span></div>
+						<div class="fact"><b>25</b><span class="de">Personen im größten Team</span><span class="en">people in my largest team</span></div>
+						<div class="fact"><b>28</b><span class="de">aktive Zertifizierungen</span><span class="en">active certifications</span></div>
+						<div class="fact"><b>CISSP</b><span class="de">seit 2021</span><span class="en">since 2021</span></div>
+					</div>
+				</div>
+			</section>
+
+			<section id="schwerpunkte">
+				<div class="wrap">
+					<h2><span class="de">Schwerpunkte</span><span class="en">Focus areas</span></h2>
+					<div class="cards">
+						<article class="card">
+							<h3><span class="de">Sichere KI</span><span class="en">Secure AI</span></h3>
+							<p class="de">Ich baue KI-Plattformen und KI-Agenten so, dass sie sicher und nachvollziehbar arbeiten. Dazu gehören RAG, Modell-Routing, MCP und Filter für personenbezogene Daten. Die Governance richte ich an ISO 42001 und dem EU AI Act aus.</p>
+							<p class="en">I build AI platforms and AI agents that operate safely and transparently. This includes RAG, model routing, MCP and filters for personal data. I align the governance with ISO 42001 and the EU AI Act.</p>
+						</article>
+						<article class="card">
+							<h3><span class="de">Cloud-Architektur</span><span class="en">Cloud architecture</span></h3>
+							<p class="de">Ich entwerfe skalierbare und sichere Plattformen auf AWS, Azure, Google Cloud, Scaleway, Microsoft 365 und der SAP Business AI Platform, die früher SAP BTP hieß. Infrastructure as Code, DevOps und Zero Trust sind dabei feste Bestandteile.</p>
+							<p class="en">I design scalable and secure platforms on AWS, Azure, Google Cloud, Scaleway, Microsoft 365 and the SAP Business AI Platform, which had the name SAP BTP before. Infrastructure as code, DevOps and zero trust are standard parts of each design.</p>
+						</article>
+						<article class="card">
+							<h3><span class="de">Informationssicherheit</span><span class="en">Information security</span></h3>
+							<p class="de">Ich baue Managementsysteme nach ISO 27001, ISO 22301 und ISO 9001 auf und bringe sie zur Audit-Reife. NIS-2, DSGVO, CIS Benchmarks und die Härtung von Systemen gehören für mich dazu.</p>
+							<p class="en">I set up management systems to ISO 27001, ISO 22301 and ISO 9001 and make them ready for audits. NIS-2, GDPR, CIS Benchmarks and system hardening are part of this work.</p>
+						</article>
+						<article class="card">
+							<h3><span class="de">Führung</span><span class="en">Leadership</span></h3>
+							<p class="de">Ich führe interdisziplinäre Teams und entwickle IT-Talente weiter. Agile Methoden setze ich dort ein, wo sie Teams und Projekte wirklich schneller machen.</p>
+							<p class="en">I lead interdisciplinary teams and help IT talents to grow. I use agile methods where they make teams and projects faster.</p>
+						</article>
+					</div>
+				</div>
+			</section>
+
+			<section id="werdegang">
+				<div class="wrap">
+					<h2><span class="de">Werdegang</span><span class="en">Experience</span></h2>
+					<ol class="timeline">
+						<li class="job">
+							<div class="when"><span class="de">seit 2026</span><span class="en">since 2026</span></div>
+							<div>
+								<h3>Head of AI &amp; Cloud Security</h3>
+								<p class="org"><a href="https://mispa.com" target="_blank" rel="noopener">mispa Technologies GmbH</a>, Langenfeld</p>
+								<p class="de">Ich baue den Bereich AI &amp; Cloud Security auf. Wir beraten Unternehmen zu Cloud-Sicherheit, sicherer KI und KI-Governance und entwickeln dafür eigene Lösungen. Das Team arbeitet von Deutschland und Indien aus.</p>
+								<p class="en">I build up the AI &amp; Cloud Security unit. We give advice to companies on cloud security, secure AI and AI governance. We also develop our own solutions for these topics. The team works from Germany and India.</p>
+							</div>
+						</li>
+						<li class="job">
+							<div class="when">2025 – 2026</div>
+							<div>
+								<h3>Head of Innovation &amp; Security</h3>
+								<p class="org">Bitech AG, Leverkusen</p>
+								<p class="de">Ich verantwortete die Innovationsthemen und die konzernweite Cybersecurity. Ich baute ein integriertes Managementsystem für Qualität, Informationssicherheit, KI-Governance und Business Continuity auf, das auch NIS-2 und Datenschutz abdeckt. Unter meiner Leitung entstand ein eigenes KI-Framework mit RAG, Multi-Modell-Routing, MCP und PII-Filter. Industriekunden beriet ich zu KI-Transformation und Zero-Trust-Architekturen. Das Framework habe ich im Webinar <a href="#beitraege">KI-Framework für Europa</a> vorgestellt.</p>
+								<p class="en">I was responsible for innovation and for cyber security across the group. I set up an integrated management system for quality, information security, AI governance and business continuity. This system also covers NIS-2 and data protection. My team built an in-house AI framework with RAG, multi-model routing, MCP and PII filters. I gave advice to industrial customers on AI transformation and zero trust architectures. I showed the framework in the webinar <a href="#beitraege">KI-Framework für Europa</a>.</p>
+							</div>
+						</li>
+						<li class="job">
+							<div class="when">2023 – 2025</div>
+							<div>
+								<h3>Senior Consultant SAP HXM</h3>
+								<p class="org">ABS Team GmbH, Bovenden</p>
+								<p class="de">Ich leitete die technische Beratung zu KI, Microsoft 365, Azure und IT-Sicherheit. Für HR-Prozesse entwickelte ich KI-Lösungen auf SAP BTP und Azure, etwa ein Lebenslauf-Parsing mit SAP AI Core, das SAP später zertifiziert hat. In monatlichen KI-Workshops und in der Videoreihe <a href="#beitraege">KI Tea Talk</a> zeigte ich Kunden, was mit KI heute möglich ist.</p>
+								<p class="en">I led the technical consulting for AI, Microsoft 365, Azure and IT security. I developed AI solutions for HR processes on SAP BTP and Azure. One example is a CV parser that uses SAP AI Core. SAP certified this solution later. In monthly AI workshops and in the video series <a href="#beitraege">KI Tea Talk</a>, I showed customers what AI can do today.</p>
+							</div>
+						</li>
+						<li class="job">
+							<div class="when">2012 – 2023</div>
+							<div>
+								<h3>nuuONE GmbH</h3>
+								<p class="org">Düsseldorf</p>
+								<div class="sub">
+									<h4><span class="de">Leiter IT</span><span class="en">Head of IT</span><span class="yr">2019 – 2023</span></h4>
+									<p class="de">Ich führte ein Team von 25 Cloud-Architekten, Softwareingenieuren und Sicherheitsanalysten. Ich führte Richtlinien und Verfahren für ISO 27001 ein und entwickelte einen KI-Chatbot in Microsoft Teams, der Anfragen von Mitarbeitenden bearbeitet. Einen Kunden mit 7.400 Mitarbeitenden begleitete ich bei der Migration zu Microsoft 365.</p>
+									<p class="en">I led a team of 25 cloud architects, software engineers and security analysts. I introduced policies and procedures for ISO 27001. I developed an AI chatbot in Microsoft Teams that handles requests from employees. I helped a customer with 7,400 employees to move to Microsoft 365.</p>
+								</div>
+								<div class="sub">
+									<h4><span class="de">Leiter Softwareentwicklung</span><span class="en">Head of Software Development</span><span class="yr">2015 – 2019</span></h4>
+									<p class="de">Ich verantwortete Cloud-Architekturprojekte für internationale Telekommunikationsunternehmen und Banken.</p>
+									<p class="en">I was responsible for cloud architecture projects for international telecommunication companies and banks.</p>
+								</div>
+								<div class="sub">
+									<h4>Full-Stack-Developer<span class="yr">2012 – 2015</span></h4>
+									<p class="de">Ich entwickelte Web-Apps für iOS, Android, Desktop und Smart-TVs mit über 100.000 Downloads. Außerdem migrierte ich Systeme in skalierbare Umgebungen auf AWS.</p>
+									<p class="en">I developed web apps for iOS, Android, desktop and smart TVs with more than 100,000 downloads. I also moved systems to scalable environments on AWS.</p>
+								</div>
+							</div>
+						</li>
+						<li class="job">
+							<div class="when">2011 – 2012</div>
+							<div>
+								<h3><span class="de">Freiberuflicher Softwareentwickler</span><span class="en">Freelance software developer</span></h3>
+								<p class="org">Frankfurt am Main</p>
+								<p class="de">Ich entwickelte Webseiten mit Magento, WordPress, Typo3 und Joomla.</p>
+								<p class="en">I developed websites with Magento, WordPress, Typo3 and Joomla.</p>
+							</div>
+						</li>
+					</ol>
+				</div>
+			</section>
+
+			<section id="zertifizierungen">
+				<div class="wrap">
+					<h2><span class="de">Zertifizierungen</span><span class="en">Certifications</span></h2>
+					<div class="cert-group">
+						<h3>ISC2 · Nebius · Scaleway</h3>
+						<ul class="badges">
+							<li class="badge"><a href="https://www.credly.com/badges/34f77a15-787b-4d20-a97c-88d9577932a8" target="_blank" rel="noopener"><span class="img b0"></span><span class="t">Certified Information Systems Security Professional (CISSP)<span class="y">2021</span></span></a></li>
+							<li class="badge"><a href="https://www.credly.com/badges/a16e002f-272c-4a3d-8b0e-57325a315584" target="_blank" rel="noopener"><span class="img b1"></span><span class="t">Nebius AI Leader <span class="new"><span class="de">Neu</span><span class="en">New</span></span><span class="y">2026</span></span></a></li>
+							<li class="badge"><a href="https://www.credly.com/badges/9bddb632-4599-487d-b02b-0b2249426d23" target="_blank" rel="noopener"><span class="img b2"></span><span class="t">Nebius Agentic AI Builder <span class="new"><span class="de">Neu</span><span class="en">New</span></span><span class="y">2026</span></span></a></li>
+							<li class="badge"><a href="https://www.credly.com/badges/c8bd5dab-d941-40cd-9e01-c00c41545b21" target="_blank" rel="noopener"><span class="img b3"></span><span class="t">Nebius AI CloudOps Engineer <span class="new"><span class="de">Neu</span><span class="en">New</span></span><span class="y">2026</span></span></a></li>
+							<li class="badge"><div class="nolink"><span class="img b4"></span><span class="t">Scaleway Certified Professional Solution Architect <span class="new"><span class="de">Neu</span><span class="en">New</span></span><span class="y">2026</span></span></div></li>
+						</ul>
+					</div>
+					<div class="cert-group">
+						<h3>SAP</h3>
+						<ul class="badges">
+							<li class="badge"><a href="https://www.credly.com/badges/e7349721-6bc7-4ce1-b28d-190b5859509b" target="_blank" rel="noopener"><span class="img b5"></span><span class="t">SAP Certified Solution Architect SAP Business AI Platform <span class="new"><span class="de">Neu</span><span class="en">New</span></span><span class="y">2026</span></span></a></li>
+							<li class="badge"><a href="https://www.credly.com/badges/625a5a91-69a8-4268-9980-c72010e5bca2" target="_blank" rel="noopener"><span class="img b6"></span><span class="t">SAP Certified Solution Architect SAP BTP<span class="y">2025</span></span></a></li>
+							<li class="badge"><a href="https://www.credly.com/badges/ccdb5bb1-1938-4617-a9d6-d93dc6fb5758" target="_blank" rel="noopener"><span class="img b7"></span><span class="t">SAP Certified SAP Business AI Platform Administrator<span class="y">2026</span></span></a></li>
+							<li class="badge"><a href="https://www.credly.com/badges/3e3a91cf-e8d3-45da-b517-cbcfc1f6ba06" target="_blank" rel="noopener"><span class="img b8"></span><span class="t">SAP Certified Positioning AI in the Autonomous Enterprise<span class="y">2026</span></span></a></li>
+							<li class="badge"><a href="https://www.credly.com/badges/62ab8948-7d98-443d-8c27-6b94bf85578e" target="_blank" rel="noopener"><span class="img b9"></span><span class="t">SAP Certified Positioning SAP Business AI Platform<span class="y">2026</span></span></a></li>
+							<li class="badge"><a href="https://www.credly.com/badges/9469ef41-7e4f-4252-9fc9-27cc023e6518" target="_blank" rel="noopener"><span class="img b10"></span><span class="t">SAP Certified SAP Business Data Cloud<span class="y">2026</span></span></a></li>
+							<li class="badge"><a href="https://www.credly.com/badges/d068e6d4-3e91-4a7b-b8d7-5b226f1f4362" target="_blank" rel="noopener"><span class="img b11"></span><span class="t">SAP Certified SAP Generative AI Developer<span class="y">2025</span></span></a></li>
+							<li class="badge"><a href="https://www.credly.com/badges/766c43a8-0eb1-40ea-8760-fd9ea6f5e7ad" target="_blank" rel="noopener"><span class="img b12"></span><span class="t">SAP Certified Backend Developer SAP Cloud Application Programming Model<span class="y">2025</span></span></a></li>
+							<li class="badge"><a href="https://www.credly.com/badges/ca77b0b2-8d4c-4d48-9196-64fc3d493a7f" target="_blank" rel="noopener"><span class="img b13"></span><span class="t">SAP Certified Integration Developer<span class="y">2025</span></span></a></li>
+							<li class="badge"><a href="https://www.credly.com/badges/03f1ed9c-7e2a-4418-a46a-153eaae99d0e" target="_blank" rel="noopener"><span class="img b14"></span><span class="t">SAP Certified Data Analyst SAP Analytics Cloud<span class="y">2025</span></span></a></li>
+							<li class="badge"><a href="https://www.credly.com/badges/ea43b8ce-d8fb-4c2d-b5f1-548d0b5bb4c2" target="_blank" rel="noopener"><span class="img b15"></span><span class="t">SAP Certified SAP Build Developer<span class="y">2025</span></span></a></li>
+						</ul>
+					</div>
+					<div class="cert-group">
+						<h3>Microsoft</h3>
+						<ul class="badges">
+							<li class="badge"><a href="https://learn.microsoft.com/api/credentials/share/de-de/ColinHuelsbusch/565947E1F5F0E362" target="_blank" rel="noopener"><span class="img b16"></span><span class="t">Microsoft 365 Certified Administrator Expert<span class="y">2024</span></span></a></li>
+							<li class="badge"><a href="https://learn.microsoft.com/api/credentials/share/de-de/ColinHuelsbusch/CE1F82158BD81B05" target="_blank" rel="noopener"><span class="img b17"></span><span class="t">Microsoft Certified Azure AI Engineer Associate<span class="y">2024</span></span></a></li>
+							<li class="badge"><a href="https://learn.microsoft.com/api/credentials/share/de-de/ColinHuelsbusch/9D24E8BE82CA7540" target="_blank" rel="noopener"><span class="img b18"></span><span class="t">Microsoft 365 Certified Teams Administrator Associate<span class="y">2023</span></span></a></li>
+							<li class="badge"><a href="https://learn.microsoft.com/api/credentials/share/de-de/ColinHuelsbusch/851C4BF642092C06" target="_blank" rel="noopener"><span class="img b19"></span><span class="t">Microsoft Certified Security, Compliance, and Identity Fundamentals<span class="y">2021</span></span></a></li>
+							<li class="badge"><a href="https://learn.microsoft.com/api/credentials/share/de-de/ColinHuelsbusch/822B40DF387613AE" target="_blank" rel="noopener"><span class="img b20"></span><span class="t">Microsoft Certified Azure Fundamentals<span class="y">2021</span></span></a></li>
+							<li class="badge"><a href="https://learn.microsoft.com/api/credentials/share/de-de/ColinHuelsbusch/617C851BF7D082B6" target="_blank" rel="noopener"><span class="img b21"></span><span class="t">Microsoft Certified Azure AI Fundamentals<span class="y">2021</span></span></a></li>
+							<li class="badge"><a href="https://learn.microsoft.com/api/credentials/share/de-de/ColinHuelsbusch/5E848464FF4D4B35" target="_blank" rel="noopener"><span class="img b22"></span><span class="t">Microsoft Certified Azure Data Fundamentals<span class="y">2021</span></span></a></li>
+							<li class="badge"><a href="https://learn.microsoft.com/api/credentials/share/de-de/ColinHuelsbusch/5D07D2DDA14F4458" target="_blank" rel="noopener"><span class="img b23"></span><span class="t">Microsoft Certified Power Platform Fundamentals<span class="y">2021</span></span></a></li>
+							<li class="badge"><a href="https://learn.microsoft.com/api/credentials/share/de-de/ColinHuelsbusch/C40A8D710B663044" target="_blank" rel="noopener"><span class="img b24"></span><span class="t">Microsoft Certified Dynamics 365 Fundamentals (CRM)<span class="y">2023</span></span></a></li>
+							<li class="badge"><a href="https://learn.microsoft.com/api/credentials/share/de-de/ColinHuelsbusch/54DAECFBB140EAF3" target="_blank" rel="noopener"><span class="img b25"></span><span class="t">Microsoft Certified Dynamics 365 Fundamentals (ERP)<span class="y">2023</span></span></a></li>
+						</ul>
+					</div>
+					<div class="cert-group">
+						<h3><span class="de">Weitere</span><span class="en">More</span></h3>
+						<ul class="badges">
+							<li class="badge"><a href="https://www.scrum.org/user/179841" target="_blank" rel="noopener"><span class="img b26"></span><span class="t">Professional Scrum Master I (PSM I)<span class="y">2016</span></span></a></li>
+							<li class="badge"><a href="https://cert.efset.org/32TkP8" target="_blank" rel="noopener"><span class="img b27"></span><span class="t">EF SET English C2 Proficient<span class="y">2022</span></span></a></li>
+							<li class="badge"><a href="https://verify.skilljar.com/c/gjibiysiw94y" target="_blank" rel="noopener"><span class="img b4"></span><span class="t">Anthropic Academy Claude 101<span class="y"><span class="de">Kurs, 2026</span><span class="en">Course, 2026</span></span></span></a></li>
+						</ul>
+					</div>
+					<div class="cert-group">
+						<h3><span class="de">Frühere Zertifizierungen</span><span class="en">Former certifications</span></h3>
+						<ul class="badges">
+							<li class="badge expired"><a href="https://cp.certmetrics.com/amazon/en/public/verify/credential/BEGMVSFD3JF1QL5V" target="_blank" rel="noopener"><span class="img b28"></span><span class="t">AWS Certified Solutions Architect Professional<span class="y"><span class="de">2021 bis 2024</span><span class="en">2021 to 2024</span></span></span></a></li>
+							<li class="badge expired"><a href="https://cp.certmetrics.com/amazon/en/public/verify/credential/C590VFTBMN111QSR" target="_blank" rel="noopener"><span class="img b29"></span><span class="t">AWS Certified DevOps Engineer Professional<span class="y"><span class="de">2021 bis 2024</span><span class="en">2021 to 2024</span></span></span></a></li>
+							<li class="badge expired"><a href="https://cp.certmetrics.com/amazon/en/public/verify/credential/TX3RQXFCGJREQXSJ" target="_blank" rel="noopener"><span class="img b30"></span><span class="t">AWS Certified Solutions Architect Associate<span class="y"><span class="de">2019 bis 2024</span><span class="en">2019 to 2024</span></span></span></a></li>
+							<li class="badge expired"><a href="https://cp.certmetrics.com/amazon/en/public/verify/credential/5M4FS8DKE1V4Q0K1" target="_blank" rel="noopener"><span class="img b31"></span><span class="t">AWS Certified SysOps Administrator Associate<span class="y"><span class="de">2019 bis 2024</span><span class="en">2019 to 2024</span></span></span></a></li>
+						</ul>
+					</div>
+				</div>
+			</section>
+
+			<section id="beitraege">
+				<div class="wrap">
+					<h2><span class="de">Beiträge &amp; Medien</span><span class="en">Posts &amp; media</span></h2>
+					<h3 class="media-head">Bitech AG</h3>
+					<div class="media">
+						<article class="post feature">
+							<div class="frame">
+								<span class="thumb t0"></span>
+								<button type="button" class="play" data-embed="youtube" data-id="8phUKbiRtS4" data-title="KI-Framework für Europa">
+									<svg viewBox="0 0 68 48" aria-hidden="true"><path d="M66.5 7.7a8.5 8.5 0 0 0-6-6C55.3.3 34 .3 34 .3s-21.3 0-26.5 1.4a8.5 8.5 0 0 0-6 6C.1 13 .1 24 .1 24s0 11 1.4 16.3a8.5 8.5 0 0 0 6 6C12.7 47.7 34 47.7 34 47.7s21.3 0 26.5-1.4a8.5 8.5 0 0 0 6-6C67.9 35 67.9 24 67.9 24s0-11-1.4-16.3z" fill="#e00"/><path d="M45 24 27 14v20z" fill="#fff"/></svg>
+									<span><span class="de">Video laden</span><span class="en">Load video</span></span>
+								</button>
+							</div>
+							<div class="body">
+								<span class="src">YouTube · Bitech AG · <span class="de">2. Juni 2026</span><span class="en">June 2, 2026</span></span>
+								<h3>KI-Framework für Europa</h3>
+								<p class="de">In dieser Webinar-Aufzeichnung stelle ich das KI-Framework der Bitech AG vor. Es geht um souveräne KI, Schatten-KI, Datenschutz und Kostentransparenz. Danach zeige ich RAG, MCP und Agenten in einer Live-Demo.</p>
+								<p class="en">In this webinar recording, I show the AI framework of Bitech AG. The topics are sovereign AI, shadow AI, data protection and cost transparency. Then I show RAG, MCP and agents in a live demo.</p>
+								<div class="actions">
+									<a href="https://www.youtube.com/watch?v=8phUKbiRtS4" target="_blank" rel="noopener"><span class="de">Auf YouTube ansehen</span><span class="en">Watch on YouTube</span></a>
+									<a href="https://bitech.ag/mi-20-05-webinar-ki-framework-fuer-europa/" target="_blank" rel="noopener"><span class="de">Ankündigung bei Bitech</span><span class="en">Announcement by Bitech</span></a>
+								</div>
+							</div>
+						</article>
+					</div>
+
+					<h3 class="media-head">ABS Team · KI Tea Talk</h3>
+					<p class="de">In der Videoreihe KI Tea Talk von ABS Team spreche ich in kurzen Folgen über KI im Personalwesen und in SAP.</p>
+					<p class="en">In the ABS Team video series KI Tea Talk, I speak about AI in HR and in SAP. Each episode is short.</p>
+					<div class="media">
+						<article class="post">
+							<div class="frame">
+								<span class="thumb t1"></span>
+								<button type="button" class="play" data-embed="youtube" data-id="bivkx5HYTa0" data-title="Autonome KI-Agenten, Zukunft oder schon Realität im HR?"><svg viewBox="0 0 68 48" aria-hidden="true"><path d="M66.5 7.7a8.5 8.5 0 0 0-6-6C55.3.3 34 .3 34 .3s-21.3 0-26.5 1.4a8.5 8.5 0 0 0-6 6C.1 13 .1 24 .1 24s0 11 1.4 16.3a8.5 8.5 0 0 0 6 6C12.7 47.7 34 47.7 34 47.7s21.3 0 26.5-1.4a8.5 8.5 0 0 0 6-6C67.9 35 67.9 24 67.9 24s0-11-1.4-16.3z" fill="#e00"/><path d="M45 24 27 14v20z" fill="#fff"/></svg><span><span class="de">Video laden</span><span class="en">Load video</span></span></button>
+							</div>
+							<div class="body">
+								<span class="src">YouTube · ABS Team · <span class="de">1. Oktober 2025</span><span class="en">October 1, 2025</span></span>
+								<h3>Autonome KI-Agenten, Zukunft oder schon Realität im HR?</h3>
+								<div class="actions"><a href="https://www.youtube.com/watch?v=bivkx5HYTa0" target="_blank" rel="noopener"><span class="de">Auf YouTube ansehen</span><span class="en">Watch on YouTube</span></a><a href="https://www.linkedin.com/feed/update/urn:li:activity:7379061945737388032/" target="_blank" rel="noopener"><span class="de">Beitrag auf LinkedIn</span><span class="en">Post on LinkedIn</span></a></div>
+							</div>
+						</article>
+						<article class="post">
+							<div class="frame">
+								<span class="thumb t2"></span>
+								<button type="button" class="play" data-embed="youtube" data-id="jUmDOCx_j2Q" data-title="KI in HR, was ist rechtlich erlaubt?"><svg viewBox="0 0 68 48" aria-hidden="true"><path d="M66.5 7.7a8.5 8.5 0 0 0-6-6C55.3.3 34 .3 34 .3s-21.3 0-26.5 1.4a8.5 8.5 0 0 0-6 6C.1 13 .1 24 .1 24s0 11 1.4 16.3a8.5 8.5 0 0 0 6 6C12.7 47.7 34 47.7 34 47.7s21.3 0 26.5-1.4a8.5 8.5 0 0 0 6-6C67.9 35 67.9 24 67.9 24s0-11-1.4-16.3z" fill="#e00"/><path d="M45 24 27 14v20z" fill="#fff"/></svg><span><span class="de">Video laden</span><span class="en">Load video</span></span></button>
+							</div>
+							<div class="body">
+								<span class="src">YouTube · ABS Team · <span class="de">7. August 2025</span><span class="en">August 7, 2025</span></span>
+								<h3>KI in HR, was ist rechtlich erlaubt?</h3>
+								<div class="actions"><a href="https://www.youtube.com/watch?v=jUmDOCx_j2Q" target="_blank" rel="noopener"><span class="de">Auf YouTube ansehen</span><span class="en">Watch on YouTube</span></a><a href="https://www.linkedin.com/feed/update/urn:li:activity:7359152897613262848/" target="_blank" rel="noopener"><span class="de">Beitrag auf LinkedIn</span><span class="en">Post on LinkedIn</span></a></div>
+							</div>
+						</article>
+						<article class="post">
+							<div class="frame">
+								<span class="thumb t3"></span>
+								<button type="button" class="play" data-embed="youtube" data-id="i_idORJXdIk" data-title="Wie Sie das richtige KI-Modell für Ihre HR finden und mit SAP AI Core nutzen"><svg viewBox="0 0 68 48" aria-hidden="true"><path d="M66.5 7.7a8.5 8.5 0 0 0-6-6C55.3.3 34 .3 34 .3s-21.3 0-26.5 1.4a8.5 8.5 0 0 0-6 6C.1 13 .1 24 .1 24s0 11 1.4 16.3a8.5 8.5 0 0 0 6 6C12.7 47.7 34 47.7 34 47.7s21.3 0 26.5-1.4a8.5 8.5 0 0 0 6-6C67.9 35 67.9 24 67.9 24s0-11-1.4-16.3z" fill="#e00"/><path d="M45 24 27 14v20z" fill="#fff"/></svg><span><span class="de">Video laden</span><span class="en">Load video</span></span></button>
+							</div>
+							<div class="body">
+								<span class="src">YouTube · ABS Team · <span class="de">8. Juli 2025</span><span class="en">July 8, 2025</span></span>
+								<h3>Wie Sie das richtige KI-Modell für Ihre HR finden und mit SAP AI Core nutzen</h3>
+								<div class="actions"><a href="https://www.youtube.com/watch?v=i_idORJXdIk" target="_blank" rel="noopener"><span class="de">Auf YouTube ansehen</span><span class="en">Watch on YouTube</span></a><a href="https://www.linkedin.com/feed/update/urn:li:activity:7348349239736823808/" target="_blank" rel="noopener"><span class="de">Beitrag auf LinkedIn</span><span class="en">Post on LinkedIn</span></a></div>
+							</div>
+						</article>
+						<article class="post">
+							<div class="frame">
+								<span class="thumb t4"></span>
+								<button type="button" class="play" data-embed="youtube" data-id="svULK8YyaC0" data-title="Warum 70 % aller KI-Projekte scheitern und wie Sie das vermeiden"><svg viewBox="0 0 68 48" aria-hidden="true"><path d="M66.5 7.7a8.5 8.5 0 0 0-6-6C55.3.3 34 .3 34 .3s-21.3 0-26.5 1.4a8.5 8.5 0 0 0-6 6C.1 13 .1 24 .1 24s0 11 1.4 16.3a8.5 8.5 0 0 0 6 6C12.7 47.7 34 47.7 34 47.7s21.3 0 26.5-1.4a8.5 8.5 0 0 0 6-6C67.9 35 67.9 24 67.9 24s0-11-1.4-16.3z" fill="#e00"/><path d="M45 24 27 14v20z" fill="#fff"/></svg><span><span class="de">Video laden</span><span class="en">Load video</span></span></button>
+							</div>
+							<div class="body">
+								<span class="src">YouTube · ABS Team · <span class="de">14. Mai 2025</span><span class="en">May 14, 2025</span></span>
+								<h3>Warum 70 % aller KI-Projekte scheitern und wie Sie das vermeiden</h3>
+								<div class="actions"><a href="https://www.youtube.com/watch?v=svULK8YyaC0" target="_blank" rel="noopener"><span class="de">Auf YouTube ansehen</span><span class="en">Watch on YouTube</span></a><a href="https://www.linkedin.com/feed/update/urn:li:activity:7328384835851309057/" target="_blank" rel="noopener"><span class="de">Beitrag auf LinkedIn</span><span class="en">Post on LinkedIn</span></a></div>
+							</div>
+						</article>
+						<article class="post">
+							<div class="frame">
+								<span class="thumb t5"></span>
+								<button type="button" class="play" data-embed="youtube" data-id="mDx6WSje3Kc" data-title="HR ohne KI? Warum 76 % der Führungskräfte Alarm schlagen"><svg viewBox="0 0 68 48" aria-hidden="true"><path d="M66.5 7.7a8.5 8.5 0 0 0-6-6C55.3.3 34 .3 34 .3s-21.3 0-26.5 1.4a8.5 8.5 0 0 0-6 6C.1 13 .1 24 .1 24s0 11 1.4 16.3a8.5 8.5 0 0 0 6 6C12.7 47.7 34 47.7 34 47.7s21.3 0 26.5-1.4a8.5 8.5 0 0 0 6-6C67.9 35 67.9 24 67.9 24s0-11-1.4-16.3z" fill="#e00"/><path d="M45 24 27 14v20z" fill="#fff"/></svg><span><span class="de">Video laden</span><span class="en">Load video</span></span></button>
+							</div>
+							<div class="body">
+								<span class="src">YouTube · ABS Team · <span class="de">24. April 2025</span><span class="en">April 24, 2025</span></span>
+								<h3>HR ohne KI? Warum 76 % der Führungskräfte Alarm schlagen</h3>
+								<div class="actions"><a href="https://www.youtube.com/watch?v=mDx6WSje3Kc" target="_blank" rel="noopener"><span class="de">Auf YouTube ansehen</span><span class="en">Watch on YouTube</span></a><a href="https://www.linkedin.com/feed/update/urn:li:activity:7317857658156277761/" target="_blank" rel="noopener"><span class="de">Beitrag auf LinkedIn</span><span class="en">Post on LinkedIn</span></a></div>
+							</div>
+						</article>
+					</div>
+
+					<h3 class="media-head"><span class="de">Eigene Beiträge</span><span class="en">My own posts</span></h3>
+					<div class="media">
+						<article class="post">
+							<div class="frame li" hidden></div>
+							<div class="body">
+								<span class="src">LinkedIn · Colin Hülsbusch · <span class="de">24. Februar 2026</span><span class="en">February 24, 2026</span></span>
+								<h3><span class="de">Destillationsangriffe auf KI-Modelle</span><span class="en">Distillation attacks on AI models</span></h3>
+								<p class="de">Meine technische Einordnung der Berichte über angebliche Destillationsangriffe auf Modelle von Anthropic.</p>
+								<p class="en">My technical view on the reports about alleged distillation attacks on models from Anthropic.</p>
+								<div class="actions">
+									<button type="button" data-embed="linkedin" data-id="urn:li:share:7432071287000326144" data-title="Colin Hülsbusch auf LinkedIn"><span class="de">Beitrag hier laden</span><span class="en">Load post here</span></button>
+									<a href="https://www.linkedin.com/posts/colinhuelsbusch_aktuell-sind-berichte-%C3%BCber-angebliche-destillationsangriffe-activity-7432071287864311808-FRC3" target="_blank" rel="noopener"><span class="de">Auf LinkedIn öffnen</span><span class="en">Open on LinkedIn</span></a>
+								</div>
+							</div>
+						</article>
+					</div>
+
+				</div>
+			</section>
+
+			<section id="engagement">
+				<div class="wrap">
+					<h2><span class="de">Engagement</span><span class="en">Community</span></h2>
+					<ul class="rows">
+						<li><span><b>ISC2</b>, <span class="de">Mitglied</span><span class="en">member</span></span><span class="y"><span class="de">seit</span><span class="en">since</span> 2021</span></li>
+						<li><span><b>Center for Internet Security</b>, Controls Community &amp; Benchmarks Community</span><span class="y"><span class="de">seit</span><span class="en">since</span> 2020</span></li>
+						<li><span><b>W3C</b>, <span class="de">Fachgruppe für Wissensrepräsentation in KI</span><span class="en">AI Knowledge Representation Community Group</span></span><span class="y"><span class="de">seit</span><span class="en">since</span> 2024</span></li>
+						<li><span><b>DSAG</b>, <span class="de">Arbeitskreis Security &amp; Vulnerability Management</span><span class="en">working group Security &amp; Vulnerability Management</span></span><span class="y">2025 – 2026</span></li>
+						<li><span><b>DSAG</b>, <span class="de">Arbeitskreis OpenAI &amp; SAP</span><span class="en">working group OpenAI &amp; SAP</span></span><span class="y">2024 – 2026</span></li>
+					</ul>
+				</div>
+			</section>
+
+			<section id="technologien">
+				<div class="wrap">
+					<h2><span class="de">Technologien</span><span class="en">Technologies</span></h2>
+					<div class="skills">
+						<div>
+							<h3><span class="de">KI &amp; Daten</span><span class="en">AI &amp; data</span></h3>
+							<ul class="tags">
+								<li>OpenAI</li><li>Anthropic</li><li>Mistral</li><li><span class="de">Open-Source-Modelle</span><span class="en">Open-source models</span></li><li>RAG</li><li><span class="de">Vektorsuche</span><span class="en">Vector search</span></li><li>MCP</li><li>A2A</li><li>SAP AI Core</li><li>Microsoft Foundry</li><li>Amazon Bedrock</li><li>Google Vertex AI</li><li>Nebius</li><li>LiteLLM</li><li>Open WebUI</li><li><span class="de">PII-Pseudonymisierung</span><span class="en">PII pseudonymization</span></li>
+							</ul>
+						</div>
+						<div>
+							<h3>Cloud</h3>
+							<ul class="tags">
+								<li>AWS</li><li>Microsoft Azure</li><li>Google Cloud Platform</li><li>Scaleway</li><li>SAP Business AI Platform (BTP)</li><li>Microsoft 365</li><li>Microsoft Entra ID</li><li>Azure Landing Zones</li><li>Kubernetes</li><li>SAP Integration Suite</li><li>Power Platform</li>
+							</ul>
+						</div>
+						<div>
+							<h3>Security &amp; Governance</h3>
+							<ul class="tags">
+								<li>ISO 27001</li><li>ISO 42001</li><li>ISO 22301</li><li>ISO 9001</li><li>NIS-2</li><li>EU AI Act</li><li><span class="de">DSGVO</span><span class="en">GDPR</span></li><li>Zero Trust</li><li>IAM</li><li>CIS Benchmarks</li><li>DISA STIG</li><li><span class="de">Pentests</span><span class="en">Penetration tests</span></li>
+							</ul>
+						</div>
+						<div>
+							<h3><span class="de">Entwicklung &amp; DevOps</span><span class="en">Development &amp; DevOps</span></h3>
+							<ul class="tags">
+								<li>Python</li><li>Java</li><li>TypeScript</li><li>Go</li><li>Rust</li><li>SQL</li><li>GraphQL</li><li>OData</li><li>SAP CAP</li><li>Terraform</li><li>Ansible</li><li>Docker</li><li>Helm</li><li>Azure DevOps</li>
+							</ul>
+						</div>
+					</div>
+					<h3 style="margin-top:2rem"><span class="de">Außerdem</span><span class="en">Other skills</span></h3>
+					<p class="de" style="margin-top:.4rem">Ich produziere Videos und erstelle technische Tutorials. Grafiken und Printmedien gestalte ich mit Photoshop, Illustrator und InDesign. In meiner Freizeit fotografiere ich Natur und Landschaften. Deutsch ist meine Muttersprache, Englisch spreche ich auf C2-Niveau.</p>
+					<p class="en" style="margin-top:.4rem">I produce videos and make technical tutorials. I design graphics and print media with Photoshop, Illustrator and InDesign. In my free time, I take photos of nature and landscapes. German is my native language. My English is at C2 level.</p>
+				</div>
+			</section>
+
+			<section id="projekte" class="contact">
+				<div class="wrap">
+					<h2><span class="de">Leistungen und Projektanfragen</span><span class="en">Services and project requests</span></h2>
+					<p class="lead de">Sie möchten mich für ein Projekt beauftragen? Das ist über mispa Technologies möglich. Mit meinem Team biete ich dort folgende Leistungen an:</p>
+					<p class="lead en">Do you want to hire me for a project? You can do this through mispa Technologies. With my team at mispa, I offer these services:</p>
+					<div class="services">
+						<article class="card">
+							<h3>Cloud &amp; Microsoft 365</h3>
+							<h4><span class="de">Konfigurationsprüfung Microsoft 365</span><span class="en">Microsoft 365 configuration check</span></h4>
+							<p class="de">Wir prüfen Anmeldung, Admin-Rollen, E-Mail-Schutz, Teams, SharePoint und Geräte gegen anerkannte Standards. Sie erhalten priorisierte Funde mit Anleitung und einen Nachweis für NIS2 und Audits zum Festpreis.</p>
+							<p class="en">We examine sign-in, admin roles, email protection, Teams, SharePoint and devices against recognized standards. You get findings in order of priority, instructions and evidence for NIS2 and audits at a fixed price.</p>
+							<h4><span class="de">Konfigurationsprüfung Cloud</span><span class="en">Cloud configuration check</span></h4>
+							<p class="de">Für Azure, AWS, Google Cloud, SAP BTP und Scaleway prüfen wir Identitäten, Netzwerk, Daten und Überwachung.</p>
+							<p class="en">For Azure, AWS, Google Cloud, SAP BTP and Scaleway, we examine identities, network, data and monitoring.</p>
+							<h4><span class="de">Cloud-Architektur-Review</span><span class="en">Cloud architecture review</span></h4>
+							<p class="de">Wir entwickeln ein Zielbild für Landing Zones, Netzwerkzonen, die Anbindung an Ihr Rechenzentrum, Identitäten und Infrastructure as Code.</p>
+							<p class="en">We define a target architecture for landing zones, network zones, the connection to your data center, identities and infrastructure as code.</p>
+							<h4><span class="de">Umsetzung der Funde</span><span class="en">Implementation of findings</span></h4>
+							<p class="de">Wir setzen Zero Trust und Härtung gemeinsam mit Ihrem Team um. Neue Regeln laufen zuerst im Testmodus, damit der Betrieb ungestört bleibt.</p>
+							<p class="en">We implement zero trust and hardening together with your team. New rules first run in test mode, so that operation continues without problems.</p>
+						</article>
+						<article class="card">
+							<h3><span class="de">Sichere KI</span><span class="en">Secure AI</span></h3>
+							<h4><span class="de">Souveräne KI-Umgebung</span><span class="en">Sovereign AI environment</span></h4>
+							<p class="de">Ihre Mitarbeitenden nutzen KI über eine zentrale Umgebung mit europäischen Modellen, direkt in Microsoft Teams. Ein Filter entfernt personenbezogene Daten, und Sie zahlen nur den Verbrauch.</p>
+							<p class="en">Your employees use AI through one central environment with European models, directly in Microsoft Teams. A filter removes personal data. You pay only for what you use.</p>
+							<h4><span class="de">Prüfung von KI-Agenten</span><span class="en">AI agent review</span></h4>
+							<p class="de">Wir prüfen, ob ein Agent von kritischen Systemen getrennt ist, nur die nötigen Rechte hat und sich nicht durch präparierte Inhalte steuern lässt. Außerdem prüfen wir, ob die Kosten planbar bleiben.</p>
+							<p class="en">We examine if an agent is separated from critical systems, has only the necessary permissions and resists manipulated content. We also examine if the costs stay predictable.</p>
+							<h4><span class="de">KI-entwickelte Software</span><span class="en">AI-developed software</span></h4>
+							<p class="de">Wir prüfen Architektur, Sicherheit und Performance von der Datenbank bis zum Hosting. Der Einstieg ist eine Kurzanalyse ab vier Stunden.</p>
+							<p class="en">We examine architecture, security and performance from the database to the hosting. You can start with a short analysis of four hours or more.</p>
+						</article>
+						<article class="card">
+							<h3>Governance &amp; <span class="de">Zugänge</span><span class="en">access</span></h3>
+							<h4><span class="de">ISMS nach ISO 27001 und NIS2</span><span class="en">ISMS to ISO 27001 and NIS2</span></h4>
+							<p class="de">Wir begleiten Sie von der Bestandsaufnahme über die GAP-Analyse bis zum Maßnahmenplan und zur Umsetzung. Jede Phase ist einzeln buchbar.</p>
+							<p class="en">We help you from the first assessment and the gap analysis to the action plan and the implementation. You can order each phase separately.</p>
+							<h4><span class="de">KI-Governance</span><span class="en">AI governance</span></h4>
+							<p class="de">Wir erfassen Ihre KI-Systeme, schreiben eine KI-Richtlinie und schulen Ihre Mitarbeitenden für den AI Act. Auf Wunsch bauen wir ein Managementsystem nach ISO 42001 auf.</p>
+							<p class="en">We record your AI systems, write an AI policy and train your employees for the AI Act. If you want, we set up a management system to ISO 42001.</p>
+							<h4>Privileged Access Management</h4>
+							<p class="de">Wir beraten, führen die Lösung ein und betreiben sie für Sie. Passwörter liegen in einem Tresor, und ein kontrollierter Zugang zeichnet Admin-Sitzungen auf.</p>
+							<p class="en">We give advice, introduce the solution and operate it for you. Passwords are in a vault, and a controlled access point records admin sessions.</p>
+						</article>
+					</div>
+					<div class="project">
+						<p class="de">Schreiben Sie mir kurz, worum es geht. Ich melde mich dann mit einem Vorschlag bei Ihnen.</p>
+						<p class="en">Send me a short message about your project. I will then contact you with a proposal.</p>
+						<div class="links">
+							<a class="link" href="mailto:colin.huelsbusch@mispa.com?subject=Projektanfrage">colin.huelsbusch@mispa.com</a>
+							<a class="link" href="https://mispa.com" target="_blank" rel="noopener">mispa.com</a>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section id="kontakt" class="contact">
+				<div class="wrap">
+					<h2><span class="de">Kontakt</span><span class="en">Contact</span></h2>
+					<p class="de">Am besten erreichen Sie mich per E-Mail oder über LinkedIn.</p>
+					<p class="en">The best way to contact me is by email or on LinkedIn.</p>
+					<div class="links">
+						<a class="link" href="mailto:mail@colinhuelsbusch.de"><span class="de">E-Mail</span><span class="en">Email</span></a>
+						<a class="link" href="https://www.linkedin.com/in/colinhuelsbusch" target="_blank" rel="noopener">LinkedIn</a>
+						<a class="link" href="business-card.vcf"><span class="de">Visitenkarte</span><span class="en">Business Card</span></a>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<footer>
+			<div class="wrap">
+				<span>© 2026 Colin Hülsbusch</span>
+				<button type="button" data-open="impressum"><span class="de">Impressum</span><span class="en">Legal notice</span></button>
+				<button type="button" data-open="datenschutz"><span class="de">Datenschutz</span><span class="en">Privacy</span></button>
+				<button type="button" class="theme-btn" data-theme-toggle aria-label="Farbschema wechseln / Toggle color scheme"><svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M8 1.5a6.5 6.5 0 0 1 0 13z" fill="currentColor"/></svg></button>
 			</div>
-			<div class="badge">
-				<a href="https://www.scrum.org/user/179841" target="_blank">
-					<div class="img badge4"></div>
-					<span>Professional<br>Scrum Master I<br>(PSM I)</span>
-				</a>
+		</footer>
+
+		<dialog id="impressum" aria-labelledby="impressum-title">
+			<h2 id="impressum-title"><span class="de">Impressum</span><span class="en">Legal notice</span></h2>
+			<p><span class="de">Angaben gemäß § 5 DDG</span><span class="en">Information according to § 5 DDG</span></p>
+			<p>
+				Colin Hülsbusch<br>
+				Bergbrede 22<br>
+				32361 Preußisch Oldendorf<br>
+				<span class="de">Deutschland</span><span class="en">Germany</span>
+			</p>
+			<p>
+				<span class="de">Telefon</span><span class="en">Phone</span>: <a href="tel:+4917668881117">+49 176 68881117</a><br>
+				<span class="de">E-Mail</span><span class="en">Email</span>: <a href="mailto:mail@colinhuelsbusch.de">mail@colinhuelsbusch.de</a>
+			</p>
+			<p class="de">Diese Seite ist mein persönliches Profil. Sie gibt meine eigene Sicht wieder und nicht die meines Arbeitgebers.</p>
+			<p class="en">This page is my personal profile. It shows my own view and not the view of my employer.</p>
+			<div class="dialog-actions"><button type="button" data-close><span class="de">Schließen</span><span class="en">Close</span></button></div>
+		</dialog>
+
+		<dialog id="datenschutz" aria-labelledby="datenschutz-title">
+			<h2 id="datenschutz-title"><span class="de">Datenschutz</span><span class="en">Privacy</span></h2>
+			<div class="de">
+				<p>Diese Seite setzt keine Cookies und nutzt keine Analyse- oder Tracking-Werkzeuge. Sie lädt keine externen Schriften. Ihre Sprachwahl und Ihr Farbschema speichert die Seite nur lokal in Ihrem Browser.</p>
+				<h3>Hosting</h3>
+				<p>Die Seite liegt bei Cloudflare, Inc., 101 Townsend St., San Francisco, CA 94107, USA. Cloudflare liefert die Seite über ein weltweites Netz von Servern aus. Dabei verarbeitet Cloudflare technisch notwendige Daten wie Ihre IP-Adresse, den Zeitpunkt des Aufrufs und die aufgerufene Adresse. Ohne diese Daten lässt sich die Seite nicht sicher ausliefern. Rechtsgrundlage ist mein berechtigtes Interesse nach Art. 6 Abs. 1 lit. f DSGVO.</p>
+				<p>Cloudflare bittet Ihren Browser außerdem, Verbindungsfehler an Cloudflare zu melden. Erfolgreiche Aufrufe meldet der Browser dabei nicht.</p>
+				<h3>Übermittlung in die USA</h3>
+				<p>Bei der Auslieferung können Daten in die USA gelangen. Cloudflare ist nach dem EU-US Data Privacy Framework zertifiziert. Für zertifizierte Unternehmen gilt der Angemessenheitsbeschluss der EU-Kommission nach Art. 45 DSGVO. Mehr steht in der <a href="https://www.cloudflare.com/privacypolicy/" target="_blank" rel="noopener">Datenschutzerklärung von Cloudflare</a>.</p>
+				<h3>Videos und Beiträge</h3>
+				<p>Videos von YouTube und Beiträge von LinkedIn lädt die Seite erst, wenn Sie auf Laden klicken. Erst dann überträgt Ihr Browser Daten wie Ihre IP-Adresse an Google oder LinkedIn. Auch dabei können Daten in die USA gelangen. Rechtsgrundlage ist Ihre Einwilligung nach Art. 6 Abs. 1 lit. a DSGVO, die Sie mit dem Klick geben. Für YouTube nutze ich den erweiterten Datenschutzmodus.</p>
+				<h3>Verantwortlicher und Ihre Rechte</h3>
+				<p>Verantwortlich ist Colin Hülsbusch mit der Anschrift aus dem Impressum, erreichbar unter <a href="mailto:mail@colinhuelsbusch.de">mail@colinhuelsbusch.de</a>. Sie haben das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung, Datenübertragbarkeit und Widerspruch nach Art. 15 bis 21 DSGVO. Außerdem können Sie sich bei einer Datenschutzaufsichtsbehörde beschweren, etwa bei der Landesbeauftragten für Datenschutz und Informationsfreiheit Nordrhein-Westfalen.</p>
 			</div>
-			<div class="badge">
-				<a href="https://learn.microsoft.com/api/credentials/share/de-de/ColinHuelsbusch/565947E1F5F0E362" target="_blank">
-					<div class="img badge5"></div>
-					<span>Microsoft 365 Certified<br>Administrator<br>Expert</span>
-				</a>
+			<div class="en">
+				<p>This page sets no cookies and uses no analytics or tracking tools. It loads no external fonts. The page keeps your language and color scheme only in your own browser.</p>
+				<h3>Hosting</h3>
+				<p>Cloudflare, Inc., 101 Townsend St., San Francisco, CA 94107, USA, hosts this page. Cloudflare delivers the page through a global network of servers. For this, Cloudflare processes the necessary technical data, for example your IP address, the time of the request and the requested address. Without these data, the page cannot be delivered safely. The legal basis is my legitimate interest according to Art. 6(1)(f) GDPR.</p>
+				<p>Cloudflare also asks your browser to report connection errors to Cloudflare. Your browser does not report successful requests.</p>
+				<h3>Transfer to the USA</h3>
+				<p>During delivery, data can go to the USA. Cloudflare is certified under the EU-U.S. Data Privacy Framework. For certified companies, the adequacy decision of the European Commission according to Art. 45 GDPR applies. For more information, refer to the <a href="https://www.cloudflare.com/privacypolicy/" target="_blank" rel="noopener">privacy policy of Cloudflare</a>.</p>
+				<h3>Videos and posts</h3>
+				<p>The page loads YouTube videos and LinkedIn posts only when you click Load. Only then does your browser send data, for example your IP address, to Google or LinkedIn. Also in this case, data can go to the USA. The legal basis is your consent according to Art. 6(1)(a) GDPR, which you give with the click. For YouTube, I use the privacy-enhanced mode.</p>
+				<h3>Controller and your rights</h3>
+				<p>The controller is Colin Hülsbusch. The address is in the legal notice. You can contact me at <a href="mailto:mail@colinhuelsbusch.de">mail@colinhuelsbusch.de</a>. According to Art. 15 to 21 GDPR, you have the right of access, rectification, erasure, restriction, data portability and objection. You can also complain to a data protection authority, for example the data protection authority of North Rhine-Westphalia.</p>
 			</div>
-			<div class="badge">
-				<a href="https://learn.microsoft.com/api/credentials/share/de-de/ColinHuelsbusch/CE1F82158BD81B05" target="_blank">
-					<div class="img badge6"></div>
-					<span>Microsoft Certified<br>AI Engineer<br>Associate</span>
-				</a>
-			</div>
-			<div class="badge">
-				<a href="https://learn.microsoft.com/api/credentials/share/de-de/ColinHuelsbusch/9D24E8BE82CA7540" target="_blank">
-					<div class="img badge7"></div>
-					<span>Microsoft 365 Certified<br>Teams Administrator<br>Associate</span>
-				</a>
-			</div>
-			<div class="badge">
-				<a href="https://learn.microsoft.com/api/credentials/share/de-de/ColinHuelsbusch/851C4BF642092C06" target="_blank">
-					<div class="img badge8"></div>
-					<span>Microsoft Certified<br>Security, Compliance, and<br>Identity Fundamentals</span>
-				</a>
-			</div>
-			<div class="badge">
-				<a href="https://learn.microsoft.com/api/credentials/share/de-de/ColinHuelsbusch/822B40DF387613AE target="_blank">
-					<div class="img badge9"></div>
-					<span>Microsoft Certified<br>Azure<br>Fundamentals</span>
-				</a>
-			</div>
-			<div class="badge">
-				<a href="https://learn.microsoft.com/api/credentials/share/de-de/ColinHuelsbusch/617C851BF7D082B6" target="_blank">
-					<div class="img badge10"></div>
-					<span>Microsoft Certified<br>Azure AI<br>Fundamentals</span>
-				</a>
-			</div>
-			<div class="badge">
-				<a href="https://learn.microsoft.com/api/credentials/share/de-de/ColinHuelsbusch/5E848464FF4D4B35 target="_blank">
-					<div class="img badge11"></div>
-					<span>Microsoft Certified<br>Azure Data<br>Fundamentals</span>
-				</a>
-			</div>
-			<div class="badge">
-				<a href="https://learn.microsoft.com/api/credentials/share/de-de/ColinHuelsbusch/5D07D2DDA14F4458" target="_blank">
-					<div class="img badge12"></div>
-					<span>Microsoft Certified<br>Power Platform<br>Fundamentals</span>
-				</a>
-			</div>
-			<div class="badge">
-				<a href="https://learn.microsoft.com/api/credentials/share/de-de/ColinHuelsbusch/C40A8D710B663044" target="_blank">
-					<div class="img badge13"></div>
-					<span>Microsoft Certified<br>Dynamics 365<br>Fundamentals (CRM)</span>
-				</a>
-			</div>
-			<div class="badge">
-				<a href="https://learn.microsoft.com/api/credentials/share/de-de/ColinHuelsbusch/54DAECFBB140EAF3" target="_blank">
-					<div class="img badge14"></div>
-					<span>Microsoft Certified<br>Dynamics 365<br>Fundamentals (ERP)</span>
-				</a>
-			</div>
-			<div class="badge">
-				<a href="https://cp.certmetrics.com/amazon/en/public/verify/credential/BEGMVSFD3JF1QL5V" target="_blank">
-					<div class="img badge2"></div>
-					<span>AWS Certified<br>Solutions Architect<br>Professional</span>
-				</a>
-			</div>
-			<div class="badge">
-				<a href="https://cp.certmetrics.com/amazon/en/public/verify/credential/C590VFTBMN111QSR" target="_blank">
-					<div class="img badge3"></div>
-					<span>AWS Certified<br>DevOps Engineer<br>Professional</span>
-				</a>
-			</div>
-			<div class="badge">
-				<a href="https://cp.certmetrics.com/amazon/en/public/verify/credential/TX3RQXFCGJREQXSJ" target="_blank">
-					<div class="img badge15"></div>
-					<span>AWS Certified<br>Solutions Architect<br>Associate</span>
-				</a>
-			</div>
-			<div class="badge">
-				<a href="https://cp.certmetrics.com/amazon/en/public/verify/credential/5M4FS8DKE1V4Q0K1" target="_blank">
-					<div class="img badge16"></div>
-					<span>AWS Certified<br>SysOps Administrator<br>Associate</span>
-				</a>
-			</div>
-			<div class="badge">
-				<a href="https://www.credly.com/badges/bfcd9610-3679-4d91-9391-18df61064df9" target="_blank">
-					<div class="img badge17"></div>
-					<span>SAP Certified<br>Solution Architect<br>SAP BTP</span>
-				</a>
-			</div>
-			<div class="badge">
-				<a href="https://www.credly.com/badges/ccdb5bb1-1938-4617-a9d6-d93dc6fb5758" target="_blank">
-					<div class="img badge24"></div>
-					<span>SAP Certified<br>BTP<br>Administrator</span>
-				</a>
-			</div>
-			<div class="badge">
-				<a href="https://www.credly.com/badges/62ab8948-7d98-443d-8c27-6b94bf85578e" target="_blank">
-					<div class="img badge25"></div>
-					<span>SAP Certified<br>Positioning SAP BTP as<br>Part of SAP Business Suite</span>
-				</a>
-			</div>
-			<div class="badge">
-				<a href="https://www.credly.com/badges/3e3a91cf-e8d3-45da-b517-cbcfc1f6ba06" target="_blank">
-					<div class="img badge26"></div>
-					<span>SAP Certified<br>Positioning Business AI as<br>Part of SAP Business Suite</span>
-				</a>
-			</div>
-			<div class="badge">
-				<a href="https://www.credly.com/badges/12e12e94-b144-471d-b6fd-919c6e2106f2" target="_blank">
-					<div class="img badge19"></div>
-					<span>SAP Certified<br>SAP Generative<br>AI Developer</span>
-				</a>
-			</div>
-			<div class="badge">
-				<a href="https://www.credly.com/badges/a72c2164-462d-4186-8eb1-007bf49c43b1" target="_blank">
-					<div class="img badge18"></div>
-					<span>SAP Certified<br>Backend Developer<br>SAP CAP Model</span>
-				</a>
-			</div>
-			<div class="badge">
-				<a href="https://www.credly.com/badges/12f412ad-4389-4c82-a7a0-4b01e44758a5" target="_blank">
-					<div class="img badge20"></div>
-					<span>SAP Certified<br>Integration<br>Developer</span>
-				</a>
-			</div>
-			<div class="badge">
-				<a href="https://www.credly.com/badges/9469ef41-7e4f-4252-9fc9-27cc023e6518" target="_blank">
-					<div class="img badge23"></div>
-					<span>SAP Certified<br>SAP Business<br>Data Cloud</span>
-				</a>
-			</div>
-			<div class="badge">
-				<a href="https://www.credly.com/badges/e3e8e5ac-69f8-405d-8a32-9c8a4d12102a" target="_blank">
-					<div class="img badge21"></div>
-					<span>SAP Certified<br>Data Analyst<br>SAP Analytics Cloud</span>
-				</a>
-			</div>
-			<div class="badge">
-				<a href="https://www.credly.com/badges/339e968f-9411-4058-8a8e-bc9dda000d5d" target="_blank">
-					<div class="img badge22"></div>
-					<span>SAP Certified<br>Build<br>Developer</span>
-				</a>
-			</div>
-			<div class="badge">
-				<a href="https://cert.efset.org/32TkP8" target="_blank">
-					<div class="img badge27"></div>
-					<span>EF SET<br>English<br>C2 Proficient</span>
-				</a>
-			</div>
-		</div>
+			<div class="dialog-actions"><button type="button" data-close><span class="de">Schließen</span><span class="en">Close</span></button></div>
+		</dialog>
+
 		<script>
-			if ('serviceWorker' in navigator) {
-				navigator.serviceWorker.register('/sw.js');
-			}
+			(function () {
+				var root = document.documentElement;
+				function store(key, value) { try { localStorage.setItem(key, value); } catch (e) {} }
+				function read(key) { try { return localStorage.getItem(key); } catch (e) { return null; } }
+
+				/* Sprache */
+				function setLang(lang) {
+					root.setAttribute('data-lang', lang);
+					root.setAttribute('lang', lang);
+					document.querySelectorAll('[data-set-lang]').forEach(function (b) {
+						b.setAttribute('aria-pressed', String(b.getAttribute('data-set-lang') === lang));
+					});
+				}
+				var lang = read('lang') || ((navigator.language || 'de').toLowerCase().indexOf('de') === 0 ? 'de' : 'en');
+				setLang(lang);
+				document.querySelectorAll('[data-set-lang]').forEach(function (b) {
+					b.addEventListener('click', function () {
+						var l = b.getAttribute('data-set-lang');
+						setLang(l);
+						store('lang', l);
+					});
+				});
+
+				/* Farbschema */
+				var theme = read('theme');
+				if (theme) root.setAttribute('data-theme', theme);
+				var tbtn = document.querySelector('[data-theme-toggle]');
+				if (tbtn) tbtn.addEventListener('click', function () {
+					var dark = root.getAttribute('data-theme') ? root.getAttribute('data-theme') === 'dark' : window.matchMedia('(prefers-color-scheme: dark)').matches;
+					var next = dark ? 'light' : 'dark';
+					root.setAttribute('data-theme', next);
+					store('theme', next);
+				});
+
+				/* Dialoge, ohne Formular, damit Schließen auch in eingeschränkten Ansichten funktioniert */
+				function closeDialog(d) {
+					if (!d) return;
+					if (typeof d.close === 'function' && d.open) d.close(); else d.removeAttribute('open');
+				}
+				document.querySelectorAll('[data-open]').forEach(function (b) {
+					b.addEventListener('click', function () {
+						var d = document.getElementById(b.getAttribute('data-open'));
+						if (!d) return;
+						var shown = false;
+						try { if (typeof d.showModal === 'function') { d.showModal(); shown = true; } } catch (e) {}
+						if (!shown) d.setAttribute('open', '');
+						var h = d.querySelector('h2');
+						if (h) { h.setAttribute('tabindex', '-1'); try { h.focus({ preventScroll: true }); } catch (e) { h.focus(); } }
+						d.scrollTop = 0;
+					});
+				});
+				document.querySelectorAll('[data-close]').forEach(function (b) {
+					b.addEventListener('click', function () { closeDialog(b.closest('dialog')); });
+				});
+				document.querySelectorAll('dialog').forEach(function (d) {
+					d.addEventListener('click', function (e) {
+						if (e.target !== d) return;
+						var r = d.getBoundingClientRect();
+						if (e.clientX < r.left || e.clientX > r.right || e.clientY < r.top || e.clientY > r.bottom) closeDialog(d);
+					});
+				});
+				document.addEventListener('keydown', function (e) {
+					if (e.key === 'Escape') document.querySelectorAll('dialog[open]').forEach(closeDialog);
+				});
+
+				/* Einbettungen erst nach Klick laden */
+				document.querySelectorAll('[data-embed]').forEach(function (b) {
+					b.addEventListener('click', function () {
+						var kind = b.getAttribute('data-embed');
+						var id = b.getAttribute('data-id');
+						var frame = b.closest('.post').querySelector('.frame');
+						var src;
+						if (kind === 'youtube' && /^[\w-]{11}$/.test(id)) {
+							src = 'https://www.youtube-nocookie.com/embed/' + id + '?autoplay=1&rel=0';
+						} else if (kind === 'linkedin' && /^urn:li:(share|ugcPost|activity):\d+$/.test(id)) {
+							src = 'https://www.linkedin.com/embed/feed/update/' + id;
+						}
+						if (!src) return;
+						var f = document.createElement('iframe');
+						f.src = src;
+						f.title = b.getAttribute('data-title') || '';
+						f.loading = 'lazy';
+						f.allow = 'autoplay; encrypted-media; picture-in-picture; fullscreen';
+						f.referrerPolicy = 'strict-origin-when-cross-origin';
+						frame.innerHTML = '';
+						frame.hidden = false;
+						frame.appendChild(f);
+						if (b.classList.contains('play') === false) b.remove();
+					});
+				});
+
+				/* Aktiven Abschnitt in der Navigation markieren und die Leiste mitscrollen */
+				var nav = document.querySelector('.nav');
+				var bar = nav ? nav.querySelector('ul') : null;
+				var links = {};
+				document.querySelectorAll('.nav a').forEach(function (a) { links[a.getAttribute('href').slice(1)] = a; });
+				var sections = Array.prototype.slice.call(document.querySelectorAll('main section[id]'));
+				var current = null;
+				function showInBar(a) {
+					if (!bar || bar.scrollWidth <= bar.clientWidth) return;
+					var aRect = a.getBoundingClientRect();
+					var barRect = bar.getBoundingClientRect();
+					var left = aRect.left - barRect.left + bar.scrollLeft + aRect.width / 2 - bar.clientWidth / 2;
+					bar.scrollTo({ left: Math.max(0, left), behavior: 'smooth' });
+				}
+				function updateActive() {
+					var line = (nav ? nav.offsetHeight : 0) + Math.min(window.innerHeight * 0.25, 200);
+					var found = null;
+					sections.forEach(function (s) {
+						if (links[s.id] && s.getBoundingClientRect().top - line <= 0) found = s.id;
+					});
+					if (window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 2) {
+						for (var i = sections.length - 1; i >= 0; i--) { if (links[sections[i].id]) { found = sections[i].id; break; } }
+					}
+					if (found === current) return;
+					current = found;
+					Object.keys(links).forEach(function (k) { links[k].classList.toggle('active', k === found); });
+					if (found) showInBar(links[found]);
+				}
+				var ticking = false;
+				function onScroll() {
+					if (ticking) return;
+					ticking = true;
+					window.requestAnimationFrame(function () { ticking = false; updateActive(); });
+				}
+				window.addEventListener('scroll', onScroll, { passive: true });
+				window.addEventListener('resize', onScroll);
+				updateActive();
+			})();
 		</script>
 	</body>
 </html>
